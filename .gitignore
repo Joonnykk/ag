@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-avatargames/node_modules
+/avatargames/node_modules
 dist
 dist-ssr
 *.local
