@@ -1,0 +1,102 @@
+{% load static %}
+<section
+	class="eightScene py-[35px] pt-4 sm:py-[35px] sm:pb-[65px] md:py-[50px] md:pb-[70px] lg:py-[60px] lg:pb-[90px]"
+>
+	<div class="container xl:max-w-[1200px]">
+		<div class="grid gap-2.5 md:grid-cols-2 md:gap-5">
+			<!-- CARD 1 -->
+
+			<div
+				class="rounded-[30px] bg-white px-[30px] pb-[50px] pt-[10px] overflow-hidden eightScene-animate"
+			>
+				<!--   media     -->
+				<div class="grid grid-cols-2 px-[15px]">
+					<div class="eightScene-animate">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/info/card_1/helmet.png' %}"
+							alt="VR-шлем"
+						/>
+					</div>
+					<div class="eightScene-animate">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/info/card_1/joystick.png' %}"
+							alt="VR-джойстик"
+						/>
+					</div>
+				</div>
+
+				<!--   title     -->
+				<div class="mt-[30px]">
+					<h2
+						class="font-bold text-[40px] leading-[52px] eightScene-animate"
+					>
+						<span class="text-gradient-1"> Продажи шлемов </span>
+						<span> виртуальной реальности растут </span>
+					</h2>
+				</div>
+
+				<!--   info   -->
+				<div
+					class="mt-[30px] text-[14px] leading-[21px] sm:text-[16px] sm:leading-[24px]"
+				>
+					<p class="eightScene-animate">
+						В 2020 году примерно 57,4 миллионов человека владели
+						гарнитурой виртуальной реальности в США, по статистике в
+						2022 году эта цифра увеличилась на 37,7 миллиона.
+					</p>
+
+					<p class="mt-2.5 eightScene-animate">
+						Аналитики полагают, что к 2023 году спрос на
+						VR-устройства вырастет в 16 раз.
+					</p>
+				</div>
+			</div>
+
+			<!-- CARD 2 -->
+
+			<div
+				class="rounded-[30px] bg-white px-[30px] pb-[50px] pt-[10px] overflow-hidden eightScene-animate"
+			>
+				<!--   media     -->
+				<div class="grid px-[15px]">
+					<div class="eightScene-animate">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/info/card_2/chart.png' %}"
+							alt="Инвестиции"
+						/>
+					</div>
+				</div>
+
+				<!--   title     -->
+				<div class="mt-[30px]">
+					<h2
+						class="font-bold text-[40px] leading-[52px] eightScene-animate"
+					>
+						<span class="text-gradient-2">
+							Крупные инвестиции
+						</span>
+						<span> в отрасль </span>
+					</h2>
+				</div>
+
+				<!--   info   -->
+				<div
+					class="mt-[30px] text-[14px] leading-[21px] sm:text-[16px] sm:leading-[24px]"
+				>
+					<p class="eightScene-animate">
+						Огромное количество брендов из различных сегментов
+						инвестируют в рынок VR: Sony, Google, Microsoft, Roblox,
+						Nvidia, Facebook, Apple, Samsung, HTC, Epic Games, Unity
+						и др.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

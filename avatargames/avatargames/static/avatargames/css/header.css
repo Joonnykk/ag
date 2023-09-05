@@ -1,0 +1,62 @@
+.menuMobileOpen[area="bgPopupMenu"] {
+	transform: translate(0, 0);
+	border-top-left-radius: 0;
+}
+
+.menuMobileShow[area="menuList"] {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menuDesktopShow[area="popupMenu-desktop"] {
+	transform: translateX(0);
+}
+
+.menuStaticHide[area="static-menu"] {
+	transform: translateY(-100%);
+}
+
+.changeColorStaticMenu[area="static-menu"] {
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 4px 11px 0px rgba(202, 202, 214, 0.23);
+}
+
+.changeColorStaticMenu [area-label="language-toggle"] {
+	background-color: #e7e9ee;
+	box-shadow: 2px 0px 8px 0px rgba(151, 148, 169, 0.22);
+}
+
+.changeColorStaticMenu [area-label="language-toggle"]:first-child {
+	box-shadow: 0px 3px 11px 0px rgba(218, 223, 236, 0.26);
+}
+
+.changeColorStaticMenu a {
+	color: #0a0a0c;
+}
+
+.changeColorStaticMenu a:hover {
+	color: #6a35ff;
+}
+
+.changeColorStaticMenu button span {
+	background-color: #0a0a0c;
+}
+
+.changeColorStaticMenu svg path {
+	fill: #0a0a0c;
+}
+
+@media (min-width: 1366px) {
+	nav[area="nav-static-menu"] {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1600px) {
+	nav[area="nav-static-menu"] {
+		max-width: 1400px;
+	}
+}

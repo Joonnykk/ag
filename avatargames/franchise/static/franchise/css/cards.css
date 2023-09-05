@@ -1,0 +1,11 @@
+.thirdScene div[data-color="pink"] {
+	background: #ff00fe;
+}
+
+.thirdScene div[data-color="blue"] {
+	background: #00bbfe;
+}
+
+.thirdScene div[data-color="violet"] {
+	background: #bc3aff;
+}

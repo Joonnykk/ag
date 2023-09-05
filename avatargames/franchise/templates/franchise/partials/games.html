@@ -1,0 +1,405 @@
+{% load static %}
+<section
+	class="sixScene py-[25px] pb-[75px] sm:py-[35px] sm:pb-[65px] md:py-[50px] md:pb-[70px] lg:py-[60px] lg:pb-[140px] overflow-hidden"
+>
+	<div class="container xl:max-w-[1400px]">
+		<div class="overflow-hidden">
+			<h2
+				class="font-semibold text-[48px] leading-[62px] text-center sm:text-[96px] sm:leading-[115px] sixScene-animate"
+			>
+				Наши игры
+			</h2>
+		</div>
+
+		<div
+			class="grid sm:grid-cols-2 sm:gap-x-5 md:gap-x-6 lg:grid-cols-4 lg:gap-x-2.5"
+		>
+			<div class="flex justify-center sm:col-span-2 lg:order-2">
+				<div
+					class="h-[702px] w-[290px] relative avatar battle sm:w-[600px]"
+				>
+					<div class="absolute top-[124px] inset-x-0 z-0">
+						<picture>
+							<source
+								media="(max-width: 639px)"
+								srcset="{% static '/images/games/avatarBattle/card-bg.png' %}"
+							/>
+							<source
+								media="(min-width: 640px)"
+								srcset="{% static '/images/games/avatarBattle/card-bg-md.png' %}"
+							/>
+							<img
+								loading="lazy"
+								class="w-full h-auto"
+								src="{% static '/images/games/avatarBattle/card-bg.png' %}"
+							/>
+						</picture>
+					</div>
+
+					<div
+						class="absolute top-0 inset-x-0 z-10 avatar-img left-img sm:left-0 sm:right-auto"
+					>
+						<img
+							loading="lazy"
+							class="w-full h-auto sm:w-[290px]"
+							src="{% static '/images/games/avatarBattle/avatar-left.png' %}"
+						/>
+					</div>
+
+					<div
+						class="absolute top-0 inset-x-0 z-20 avatar-img center-img sm:left-1/2 sm:right-auto"
+					>
+						<img
+							loading="lazy"
+							class="w-full h-auto sm:w-[290px]"
+							src="{% static '/images/games/avatarBattle/avatar-center.png' %}"
+						/>
+					</div>
+
+					<div
+						class="absolute top-0 inset-x-0 z-10 avatar-img right-img hidden sm:left-auto sm:right-0 sm:block"
+					>
+						<img
+							loading="lazy"
+							class="w-full h-auto sm:w-[290px]"
+							src="{% static '/images/games/avatarBattle/avatar-right.png' %}"
+						/>
+					</div>
+					<div class="absolute bottom-0 inset-x-0 z-20">
+						<div
+							class="bg-white rounded-[20px] grid grid-cols-3 py-5 px-[30px] battle-content sm:grid-cols-4 w-[100.5%] relative left-[50%] translate-x-[-50%]"
+						>
+							<!--      CARD TITLE          -->
+							<div
+								class="col-span-3 mb-[18px] sm:col-span-4 sm:order-1 sm:mb-10"
+							>
+								<h3
+									class="font-semibold text-[19px] leading-[19px] text-left sm:text-center sm:text-[43px] sm:leading-[43px]"
+								>
+									Avatar Battle
+								</h3>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1 sm:order-2">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Жанр:
+								</span>
+							</div>
+							<div class="col-span-2 sm:col-span-1 sm:order-3">
+								<span class="text-[14px] leading-[18px]">
+									MOBA shooter
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1 sm:order-6">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Возраст:
+								</span>
+							</div>
+							<div class="col-span-2 sm:col-span-1 sm:order-7">
+								<span class="text-[14px] leading-[18px]">
+									с 9 лет
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1 sm:order-4">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Игры:
+								</span>
+							</div>
+							<div class="col-span-2 sm:col-span-1 sm:order-5">
+								<span class="text-[14px] leading-[18px]">
+									5 игровых миров
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1 sm:order-8">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Статус:
+								</span>
+							</div>
+							<div class="col-span-2 sm:col-span-1 sm:order-9">
+								<span class="text-[14px] leading-[18px]">
+									в продаже
+								</span>
+							</div>
+							<!--      CARD ACTIONS    -->
+							<div
+								class="col-span-3 mt-10 sm:col-span-4 sm:order-10"
+							>
+								<div
+									class="flex justify-between gap-6 sm:justify-center sm:gap-10"
+								>
+									<!--                  <button data-role="open-test-form" class="px-4 py-2.5 bg-[#6A35FF] rounded-[20px] text-white text-[14px] leading-[13px]-->
+									<!--                                 transition-all duration-300 hover:bg-opacity-80"-->
+									<!--                  >-->
+									<!--                    Тест-драйв-->
+									<!--                  </button>-->
+
+									<a
+										href="?s=0#plans"
+										class="text-[18px] leading-[16px] font-semibold text-[#6A35FF] flex items-center transition-all duration-300 hover:bg-opacity-80"
+									>
+										<span class="mr-1">Подробнее</span>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5.93998 13.78C5.81332 13.78 5.68665 13.7333 5.58665 13.6333C5.39332 13.44 5.39332 13.12 5.58665 12.9267L9.93332 8.58001C10.2533 8.26001 10.2533 7.74001 9.93332 7.42001L5.58665 3.07335C5.39332 2.88001 5.39332 2.56001 5.58665 2.36668C5.77998 2.17335 6.09998 2.17335 6.29332 2.36668L10.64 6.71335C10.98 7.05335 11.1733 7.51335 11.1733 8.00001C11.1733 8.48668 10.9867 8.94668 10.64 9.28668L6.29332 13.6333C6.19332 13.7267 6.06665 13.78 5.93998 13.78Z"
+												fill="#6A35FF"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="flex justify-center sm:justify-end lg:order-1 -mt-5 sm:mt-0"
+			>
+				<div class="h-[702px] w-[290px] relative avatar">
+					<div class="absolute top-[124px] inset-x-0 z-0">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/games/avatarPatyGames/card-bg.png' %}"
+						/>
+					</div>
+					<div class="absolute top-0 left-4 -right-4 z-20 avatar-img">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/games/avatarPatyGames/avatar.png' %}"
+						/>
+					</div>
+					<div class="absolute bottom-0 inset-x-0 z-20">
+						<div
+							class="bg-white rounded-[20px] grid grid-cols-3 py-5 px-[30px]"
+						>
+							<!--      CARD TITLE          -->
+							<div class="col-span-3 mb-[18px]">
+								<h3
+									class="font-semibold text-[19px] leading-[19px]"
+								>
+									Avatar Party Games
+								</h3>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Жанр:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									Casual
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Возраст:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									с 5 лет
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Игры:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									8 мини-игр
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Статус:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									в продаже
+								</span>
+							</div>
+							<!--      CARD ACTIONS    -->
+							<div class="col-span-3 mt-10">
+								<div class="flex justify-between gap-6">
+									<!--                  <button data-role="open-test-form" class="px-4 py-2.5 bg-[#6A35FF] rounded-[20px] text-white text-[14px] leading-[13px]-->
+									<!--                                 transition-all duration-300 hover:bg-opacity-80"-->
+									<!--                  >-->
+									<!--                    Тест-драйв-->
+									<!--                  </button>-->
+
+									<a
+										href="?s=1#plans"
+										class="text-[18px] leading-[16px] font-semibold text-[#6A35FF] flex items-center"
+									>
+										<span class="mr-1">Подробнее</span>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5.93998 13.78C5.81332 13.78 5.68665 13.7333 5.58665 13.6333C5.39332 13.44 5.39332 13.12 5.58665 12.9267L9.93332 8.58001C10.2533 8.26001 10.2533 7.74001 9.93332 7.42001L5.58665 3.07335C5.39332 2.88001 5.39332 2.56001 5.58665 2.36668C5.77998 2.17335 6.09998 2.17335 6.29332 2.36668L10.64 6.71335C10.98 7.05335 11.1733 7.51335 11.1733 8.00001C11.1733 8.48668 10.9867 8.94668 10.64 9.28668L6.29332 13.6333C6.19332 13.7267 6.06665 13.78 5.93998 13.78Z"
+												fill="#6A35FF"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="flex justify-center sm:justify-start lg:order-3 -mt-5 sm:mt-0"
+			>
+				<div class="h-[702px] w-[290px] relative avatar">
+					<div class="absolute top-[124px] inset-x-0 z-0">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/games/avatarVsZombies/card-bg.png' %}"
+						/>
+					</div>
+					<div class="absolute top-0 inset-x-0 z-20 avatar-img">
+						<img
+							loading="lazy"
+							class="w-full h-auto"
+							src="{% static '/images/games/avatarVsZombies/avatar.png' %}"
+						/>
+					</div>
+					<div class="absolute bottom-0 inset-x-0 z-20">
+						<div
+							class="bg-white rounded-[20px] grid grid-cols-3 py-5 px-[30px]"
+						>
+							<!--      CARD TITLE          -->
+							<div class="col-span-3 mb-[18px]">
+								<h3
+									class="font-semibold text-[19px] leading-[19px]"
+								>
+									Avatars vs Zombies
+								</h3>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Жанр:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									Survival
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Возраст:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									c 14 лет
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Игры:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									40 минут выживания
+								</span>
+							</div>
+							<!--      CARD INFO ROW          -->
+							<div class="col-span-1">
+								<span
+									class="text-[14px] leading-[18px] text-[#ACACBA]"
+								>
+									Статус:
+								</span>
+							</div>
+							<div class="col-span-2">
+								<span class="text-[14px] leading-[18px]">
+									в продаже
+								</span>
+							</div>
+							<!--      CARD ACTIONS    -->
+							<div class="col-span-3 mt-10">
+								<div class="flex justify-between gap-6">
+									<!--                  <button data-role="open-test-form" class="px-4 py-2.5 bg-[#6A35FF] rounded-[20px] text-white text-[14px] leading-[13px]-->
+									<!--                                 transition-all duration-300 hover:bg-opacity-80"-->
+									<!--                  >-->
+									<!--                    Тест-драйв-->
+									<!--                  </button>-->
+
+									<a
+										href="?s=2#plans"
+										class="text-[18px] leading-[16px] font-semibold text-[#6A35FF] flex items-center"
+									>
+										<span class="mr-1">Подробнее</span>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M5.93998 13.78C5.81332 13.78 5.68665 13.7333 5.58665 13.6333C5.39332 13.44 5.39332 13.12 5.58665 12.9267L9.93332 8.58001C10.2533 8.26001 10.2533 7.74001 9.93332 7.42001L5.58665 3.07335C5.39332 2.88001 5.39332 2.56001 5.58665 2.36668C5.77998 2.17335 6.09998 2.17335 6.29332 2.36668L10.64 6.71335C10.98 7.05335 11.1733 7.51335 11.1733 8.00001C11.1733 8.48668 10.9867 8.94668 10.64 9.28668L6.29332 13.6333C6.19332 13.7267 6.06665 13.78 5.93998 13.78Z"
+												fill="#6A35FF"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

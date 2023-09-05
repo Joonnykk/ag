@@ -1,0 +1,15 @@
+.eightScene .text-gradient-1 {
+    display: block;
+    background:
+            linear-gradient(77.84deg, #00EBFF -53.43%, #1681FF -16.44%, #B753FF 15.62%, #FF00C7 33.29%, #FF7A30 83.02%, #FFF500 104.39%),
+            linear-gradient(69.95deg, #00EBFF 18.48%, #1681FF 35.41%, #B956FF 50.09%, #FF00C7 72.73%, #FF6D6E 80.95%, #FFF500 90.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.eightScene .text-gradient-2 {
+    display: block;
+    background: linear-gradient(77.84deg, #00EBFF -53.43%, #1681FF -16.44%, #B753FF 15.62%, #FF00C7 33.29%, #FF7A30 83.02%, #FFF500 104.39%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

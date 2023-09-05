@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_vite_plugin',
-    'agsite',
+    'avatargames',
+    'franchise',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Where ViteJS assets are built.
+#DJANGO_VITE_ASSETS_PATH = BASE_DIR / "static" / "dist"
+
+# If use HMR or not.
+DJANGO_VITE_DEV_MODE = DEBUG
+
+# Name of static files folder (after called python manage.py collectstatic)
+#STATIC_ROOT = BASE_DIR / "collectedstatic"
+
+# Include DJANGO_VITE_ASSETS_PATH into STATICFILES_DIRS to be copied inside
+# when run command python manage.py collectstatic
+#STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

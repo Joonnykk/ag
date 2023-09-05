@@ -1,0 +1,440 @@
+.fourthScene .games {
+	text-shadow: 1px 1px 0px #6a35ff, 1px -1px 0px #6a35ff,
+		-1px -1px 0px #6a35ff, -1px 1px 0px #6a35ff, -1px 1px 0px #6a35ff;
+	color: #f7f7fa;
+}
+
+/* FOTOS */
+.fotos {
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.fourthScene .foto-10 {
+	right: -25px;
+	top: 60px;
+	transform: rotate(15deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-9 {
+	right: 95px;
+	top: 20px;
+	transform: rotate(-12deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-8 {
+	right: 195px;
+	top: 100px;
+	transform: rotate(4deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-7 {
+	right: 295px;
+	top: 35px;
+	transform: rotate(11deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-6 {
+	right: 405px;
+	top: 70px;
+	transform: rotate(4deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-5 {
+	right: 500px;
+	top: 10px;
+	transform: rotate(-6deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-4 {
+	right: 610px;
+	top: 60px;
+	transform: rotate(3deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-3 {
+	right: 765px;
+	top: 90px;
+	transform: rotate(-9deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-2 {
+	right: 740px;
+	top: 0px;
+	transform: rotate(10deg);
+	transform-origin: 50% 50%;
+}
+
+.fourthScene .foto-1 {
+	right: 885px;
+	top: 60px;
+	transform: rotate(-12deg);
+	transform-origin: 50% 50%;
+}
+
+@media (min-width: 1360px) {
+	ul[area="list-numbers"] {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1600px) {
+	ul[area="list-numbers"] {
+		max-width: 1319px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1280px) {
+	.fourthScene .games {
+		text-shadow: 2px 2px 0px #6a35ff, 2px -2px 0px #6a35ff,
+			-2px -2px 0px #6a35ff, -2px 2px 0px #6a35ff, -2px 2px 0px #6a35ff;
+		color: #f7f7fa;
+	}
+
+	.fourthScene .foto-10 {
+		right: 15px;
+		top: 70px;
+		transform: rotate(15deg);
+	}
+
+	.fourthScene .foto-9 {
+		right: 165px;
+		top: 0;
+		transform: rotate(-12deg);
+	}
+
+	.fourthScene .foto-8 {
+		right: 290px;
+		top: 110px;
+		transform: rotate(4deg);
+	}
+
+	.fourthScene .foto-7 {
+		right: 420px;
+		top: 35px;
+		transform: rotate(11deg);
+	}
+
+	.fourthScene .foto-6 {
+		right: 560px;
+		top: 80px;
+		transform: rotate(4deg);
+	}
+
+	.fourthScene .foto-5 {
+		right: 675px;
+		top: 10px;
+		transform: rotate(-6deg);
+	}
+
+	.fourthScene .foto-4 {
+		right: 810px;
+		top: 85px;
+		transform: rotate(3deg);
+	}
+
+	.fourthScene .foto-3 {
+		right: 985px;
+		top: 130px;
+		transform: rotate(-9deg);
+	}
+
+	.fourthScene .foto-2 {
+		right: 960px;
+		top: 0px;
+		transform: rotate(10deg);
+	}
+
+	.fourthScene .foto-1 {
+		right: 1140px;
+		top: 60px;
+		transform: rotate(-12deg);
+	}
+}
+
+.foto-1:hover {
+	animation: bell-foto-1 0.8s both;
+}
+
+.foto-2:hover {
+	animation: bell-foto-2 0.8s both;
+}
+
+.foto-3:hover {
+	animation: bell-foto-3 0.8s both;
+}
+
+.foto-4:hover {
+	animation: bell-foto-4 0.8s both;
+}
+
+.foto-5:hover {
+	animation: bell-foto-5 0.8s both;
+}
+
+.foto-6:hover {
+	animation: bell-foto-6 0.8s both;
+}
+
+.foto-7:hover {
+	animation: bell-foto-7 0.8s both;
+}
+
+.foto-8:hover {
+	animation: bell-foto-8 0.8s both;
+}
+
+.foto-9:hover {
+	animation: bell-foto-9 0.8s both;
+}
+
+.foto-10:hover {
+	animation: bell-foto-10 0.8s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-top
+ * ----------------------------------------
+ */
+@keyframes bell-foto-1 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(-12deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-18deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(-8.4deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-14.4deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(-10.8deg);
+	}
+}
+
+@keyframes bell-foto-2 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(10deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(16deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(4deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(13.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(7.6deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(11.2deg);
+	}
+}
+
+@keyframes bell-foto-3 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(-9deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(-3deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-15deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(-5.4deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-11.4deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(-7.8deg);
+	}
+}
+
+@keyframes bell-foto-4 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(3deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(9deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-3deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(6.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-0.6deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(4.2deg);
+	}
+}
+
+@keyframes bell-foto-5 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(-6deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(0deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-12deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(-2.4deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-8.4deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(-4.8deg);
+	}
+}
+
+@keyframes bell-foto-6 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(4deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(10deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-2deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(7.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-1.6deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(5.2deg);
+	}
+}
+
+@keyframes bell-foto-7 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(11deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(17deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(5deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(14.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(8.6deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(12.2deg);
+	}
+}
+
+@keyframes bell-foto-8 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(4deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(10deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-2deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(7.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-1.6deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(5.2deg);
+	}
+}
+
+@keyframes bell-foto-9 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(-12deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(-18deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(-8.4deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(-14.4deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(-10.8deg);
+	}
+}
+
+@keyframes bell-foto-10 {
+	0%,
+	100% {
+		transform: translateX(0%) rotate(15deg);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-30px) rotate(21deg);
+	}
+	30% {
+		transform: translateX(15px) rotate(9deg);
+	}
+	45% {
+		transform: translateX(-15px) rotate(18.6deg);
+	}
+	60% {
+		transform: translateX(9px) rotate(12.6deg);
+	}
+	75% {
+		transform: translateX(-6px) rotate(16.2deg);
+	}
+}

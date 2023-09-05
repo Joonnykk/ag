@@ -1,0 +1,12 @@
+.why-wrapper {
+    /*background: #F7F7FA;*/
+    /*min-height: 1000px;*/
+}
+
+.why {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: top center;
+}

@@ -3,11 +3,14 @@ import djangoVite from 'django-vite-plugin'
 import glob from 'glob'
 
 export default defineConfig({
+    base: '/static/',
     plugins: [
         djangoVite({
             input:[
-                './agsite/js/app.js',
-                './agsite/css/style.css',
+                './avatargames/js/common.js',
+                './avatargames/css/common.css',
+                './franchise/js/franchise.js',
+                './franchise/css/franchise.css',
                 ...glob.sync('static/**/*.{js,css}'),
             ]
         })

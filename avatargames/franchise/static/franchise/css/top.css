@@ -1,0 +1,83 @@
+.firstScene-game {
+	box-shadow: 7px 4px 22px 0px rgba(23, 24, 39, 0.59);
+}
+
+.firstScene-games {
+	top: -550px;
+	left: -100px;
+}
+
+.firstScene-games-col-1 {
+	transform: translateY(90px);
+}
+
+.firstScene-games-col-2 {
+	transform: translateY(140px);
+}
+
+.firstScene-games-col-3 {
+	transform: translateY(100px);
+}
+
+.firstScene-games-col-4 {
+	transform: translateY(150px);
+}
+
+.firstScene-games-col-5 {
+	transform: translateY(180px);
+}
+
+@media (min-width: 640px) {
+	.firstScene-games {
+		top: -510px;
+		left: 50px;
+	}
+
+	.firstScene-games-col-1 {
+		transform: translateY(90px);
+	}
+
+	.firstScene-games-col-2 {
+		transform: translateY(140px);
+	}
+
+	.firstScene-games-col-3 {
+		transform: translateY(100px);
+	}
+
+	.firstScene-games-col-4 {
+		transform: translateY(150px);
+	}
+
+	.firstScene-games-col-5 {
+		transform: translateY(180px);
+	}
+}
+
+@media (min-width: 1024px) {
+	.firstScene-games {
+		top: -140px;
+		left: 60px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.firstScene-games {
+		top: -140px;
+		left: 230px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.firstScene-games {
+		top: -140px;
+		left: 280px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.firstScene-games {
+		top: -127px;
+		left: 244px;
+	}
+}
