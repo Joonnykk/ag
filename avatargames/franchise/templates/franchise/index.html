@@ -1,0 +1,33 @@
+{% load vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}Avatar games | Сеть арен виртуальной реальности{% endblock %}</title>
+    {% vite %}
+    {% vite 'franchise/js/app.js' 'franchise/css/style.css' 'avatargames/js/common.js' 'avatargames/css/style.css'%}
+</head>
+<body class="bg-[#F7F7FA] group franchise-page">
+
+    <div>
+        <main class="bg-[#F7F7FA]">
+            {% include 'agsite/partials/top.html' %}
+            {% include 'agsite/partials/cards.html' %}
+            {% include 'agsite/partials/profit.html' %}
+            {% include 'agsite/partials/countries.html' %}
+            {% include 'agsite/partials/games.html' %}
+            {% include 'agsite/partials/why.html' %}
+            {% include 'agsite/partials/info.html' %}
+            {% include 'agsite/partials/advantages.html' %}
+            {% include 'agsite/partials/video.html' %}
+            {% include 'agsite/partials/prices.html' %}
+            {% include 'agsite/partials/subscription.html' %}
+            {% include 'agsite/partials/partners.html' %}
+            {% include 'agsite/partials/design.html' %}
+            {% include 'agsite/partials/more.html' %}
+        </main>
+    </div>
+</body>
+</html>
