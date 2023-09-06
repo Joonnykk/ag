@@ -1,0 +1,54 @@
+<div class="flex flex-col w-full mt-1">
+  <label for="phone" class="flex justify-between">
+    <span
+      class="group-[.question]:hidden text-[10px] leading-[10px] text-[#808796] pb-[3px] pl-[3px]"
+    >
+      Телефон
+    </span>
+    <span
+      class="group-[.question]:hidden text-[#FF00FE] self-end text-[15px] leading-[9px]"
+      aria-required="true"
+    >
+      *
+    </span>
+  </label>
+  <div class="flex relative flex-col">
+    <input
+      class="group-[.question]:py-2 w-full py-3 pr-4 pl-[54px] rounded-full text-[16px] leading-[16px] border border-[#EFEFF8] outline-[#6A35FF] placeholder:text-[#D0D0E5] transition-all duration-300"
+      id="phone"
+      type="tel"
+      name="phone"
+      placeholder=""
+      value=""
+      required
+    />
+    <p class="inputError text-[9px] leading-[11px] tracking-[2%] text-[#FF1515] pl-4" aria-hidden="true">
+      no error
+    </p>
+    <button
+      class="phone-select-trigger absolute flex items-center top-3.5 left-4"
+    >
+      <img
+        class="w-[21px] h-auto border"
+        src="/images/common/form/countries/ru.svg"
+        alt="Россия (+7)"
+      />
+      <span>
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M4.66699 6L8.00033 10L11.3337 6H4.66699Z" fill="#999999" />
+        </svg>
+      </span>
+    </button>
+
+    <div
+      aria-hidden="false"
+      class="absolute z-10 bg-white top-[48px] inset-x-0 rounded-[20px] phone-select-data"
+    ></div>
+  </div>
+</div>

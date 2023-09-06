@@ -1,0 +1,214 @@
+section[data-role="order-form"][aria-hidden="true"],
+section[data-role="test-form"][aria-hidden="true"] {
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms linear, transform 0ms linear 200ms,
+    visibility 0ms linear;
+}
+
+section[data-role="order-form"][aria-hidden="true"]
+  > *
+  section[data-role="test-form"][aria-hidden="true"]
+  > * {
+  visibility: hidden;
+  transition: visibility 0ms linear !important;
+}
+
+section[data-role="test-form"][aria-hidden="false"],
+section[data-role="order-form"][aria-hidden="false"] {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0ms linear, transform 200ms linear, visibility 0ms linear;
+}
+
+section[data-role="test-form"][aria-hidden="false"] > *,
+section[data-role="order-form"][aria-hidden="false"] > * {
+  visibility: visible;
+  transition: visibility 0ms linear !important;
+}
+
+.phone-select-data {
+  box-shadow: 3px 3px 8px 1px rgba(174, 174, 192, 0.2);
+  overflow: hidden;
+}
+
+.phone-select-data[aria-hidden="true"] {
+  max-height: 380px;
+  transition: max-height 400ms linear;
+}
+
+.phone-select-data[aria-hidden="false"] {
+  max-height: 0px;
+  transition: max-height 200ms linear;
+}
+
+.phone-select-data ul {
+  row-gap: 16px;
+  max-height: 380px;
+  overflow-y: scroll;
+}
+
+.phone-select-data ul::-webkit-scrollbar {
+  width: 2px;
+}
+
+.phone-select-data ul::-webkit-scrollbar-track {
+  background: transparent;
+  padding-top: 16px;
+}
+
+.phone-select-data ul::-webkit-scrollbar-thumb {
+  background-color: rgba(106, 53, 255, 0.2);
+  border-radius: 5px;
+}
+
+.phone-select-data li {
+  transition: all 250ms ease;
+}
+
+.phone-select-data li:hover {
+  cursor: pointer;
+}
+
+.inputError[aria-hidden="true"] {
+  opacity: 0;
+  transition: opacity 0ms ease-in;
+}
+
+.inputError[aria-hidden="false"] {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+#fileInput {
+  font-family: "Open Sans";
+}
+
+#fileInput .dz-default.dz-message {
+  display: flex;
+  justify-content: center;
+}
+
+#fileInput .dz-button {
+  display: flex;
+  justify-content: center;
+}
+
+#fileInput .dz-details {
+  display: flex;
+}
+
+#fileInput .dz-details .dz-size{
+  font-size: 12px;
+  line-height: 20px;
+  color: #909090;
+}
+
+#fileInput .dz-details .dz-size > span > strong{
+  font-weight: 400!important;
+}
+
+#fileInput .dz-details .dz-filename{
+  font-size: 12px;
+  line-height: 20px;
+  color: #101828;
+}
+
+#fileInput .dz-details .icon-wrap {
+  padding-right: 14px;
+}
+
+#fileInput .dz-details .icon-wrap > div {
+  padding: 4px;
+  border-radius: 50%;
+  background: #F9F5FF;
+}
+
+#fileInput .dz-details .icon-wrap > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background: #F4EBFF;
+}
+
+#fileInput_fileIcon{
+  stroke: #6A35FF;
+}
+
+#fileInput.dz-started .dz-default.dz-message {
+  display: none;
+}
+
+#fileInput .dz-error-message {
+  font-size: 12px;
+  line-height: 20px;
+  color: #B42318;
+}
+
+#fileInput .dz-error .dz-size {
+  display: none;
+}
+
+#fileInput .dz-error .dz-filename {
+  color: #D92D20;
+}
+
+#fileInput .dz-error .dz-details .icon-wrap > div {
+  background: #FEE4E2;
+}
+
+#fileInput .dz-error .dz-details .icon-wrap > div > div {
+  background: #FEF3F2;
+}
+
+#fileInput .dz-error #fileInput_fileIcon{
+  stroke: #D92D20;
+}
+
+#fileInput .dz-button .download-icon {
+  padding: 4px;
+  border-radius: 50%;
+  background: #f7f8fa;
+}
+
+#fileInput .dz-button .download-icon > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background: #eef2f7;
+}
+
+#fileInput .dz-error-mark,
+#fileInput .dz-success-mark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#fileInput .dz-error-mark {
+  display: none;
+}
+
+#fileInput .dz-error .dz-error-mark {
+  display: block;
+}
+
+#fileInput .dz-error .dz-success-mark {
+  display: none;
+}
+
+#fileInput .dz-error-mark_button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

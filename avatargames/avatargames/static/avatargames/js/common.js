@@ -1,6 +1,8 @@
 import "../css/common.css";
 import "../css/header.css";
 import "../css/footer.css";
+import "../css/form/form.css";
+import "../css/form/messages/style.css";
 
 import {
 	mobileMenuOpen,
@@ -8,16 +10,21 @@ import {
 	toggleLanguage,
 } from "./header.js";
 
+import {
+	orderFormInit,
+	phoneInputsInit,
+} from "./form/main.js";
+
 import { questionBounced } from "./footer";
 
 window.addEventListener("DOMContentLoaded", () => {
-	mobileMenuOpen();
-	toggleLanguage();
-	openDesktopMenu();
+	mobileMenuOpen()
+	toggleLanguage()
+	openDesktopMenu()
 
-	questionBounced();
-//	phoneInputsInit();
-//	orderFormInit();
+	questionBounced()
+    phoneInputsInit()
+    orderFormInit()
 //	activePopupMenuLink();
 //	activeStaticDesktopMenuLink();
 //	scrollTopButton();

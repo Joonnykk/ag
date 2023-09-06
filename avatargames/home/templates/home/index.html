@@ -1,0 +1,27 @@
+{% load vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'favicon/favicon.html' %}
+    <title>{% block title%}Avatar games | Сеть арен виртуальной реальности{% endblock %}</title>
+
+    {% vite %}
+    {% vite 'avatargames/js/common.js' 'avatargames/css/common.css' 'home/js/home.js' 'home/css/home.css'%}
+    {% include 'metriks/head.html' %}
+</head>
+<body class="bg-[#F7F7FA] group franchise-page">
+    {% include 'header/header.html' %}
+    <div>
+        <main class="bg-[#F7F7FA]">
+            <h1>Home</h1>
+        </main>
+    </div>
+    {% include 'footer/footer.html' %}
+    {% include 'form/form.html' %}
+    {% include 'form/messages/success.html' %}
+    {% include 'metriks/body.html' %}
+</body>
+</html>

@@ -1,0 +1,47 @@
+<section class="fixed inset-0 bg-[#F7F7FA] z-50 pt-[170px]" aria-hidden="true" data-role="order-form">
+  <div class="container">
+    <div class="flex justify-center">
+      <div class="w-[320px] relative flex flex-col items-center justify-center">
+        <!--  CLOSE BTN -->
+        <button data-role="close-order-form" class="absolute z-30 -top-8 right-0
+                       sm:top-0 sm:-right-[55px]"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.75 5.25L5.25 18.75" stroke="#808796" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.75 18.75L5.25 5.25" stroke="#808796" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <!--  CLOSE BTN -->
+
+        <header class="text-center mb-5">
+          <h6 class="text-[16px] leading-[24px] text-[#1D1D1F]">
+            Оставить заявку на франшизу
+          </h6>
+        </header>
+
+        {% include 'form/inputs/name.html' %}
+
+        {% include 'form/inputs/phone.html' %}
+
+        {% include 'form/inputs/email.html' %}
+
+        <button
+                id="orderForm-submit"
+            class="mt-5 border border-[#6A35FF] text-[white] bg-[#6A35FF] rounded-[50px] w-full py-3.5 text-[16px] leading-[16px]
+                   disabled:bg-white disabled:border-[#EFEFF8] disabled:text-[#98A2B3] transition-all duration-300 hover:bg-opacity-80"
+            disabled
+        >
+            Оставить заявку
+        </button>
+
+        <footer class="mt-5">
+          <p class="text-[12px] leading-[14px] text-center text-[#808796]">
+            Нажимая на «Оставить заявку», вы соглашаетесь с условиями <a class="text-[#6A35FF] transition-all duration-300 hover:bg-opacity-80" href="!#">Политики конфиденциальности</a>
+          </p>
+        </footer>
+
+      </div>
+    </div>
+
+  </div>
+</section>

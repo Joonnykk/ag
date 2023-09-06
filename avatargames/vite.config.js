@@ -9,6 +9,8 @@ export default defineConfig({
             input:[
                 './avatargames/js/common.js',
                 './avatargames/css/common.css',
+                './home/js/home.js',
+                './home/css/home.css',
                 './franchise/js/franchise.js',
                 './franchise/css/franchise.css',
                 ...glob.sync('static/**/*.{js,css}'),

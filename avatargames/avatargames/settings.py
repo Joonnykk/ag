@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_vite_plugin',
     'avatargames',
+    'home',
     'franchise',
 ]
 
