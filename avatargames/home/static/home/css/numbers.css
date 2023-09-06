@@ -1,0 +1,14 @@
+@media (min-width: 1360px) {
+	ul[area="list-numbers"] {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1600px) {
+	ul[area="list-numbers"] {
+		max-width: 1319px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

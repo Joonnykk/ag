@@ -1,0 +1,116 @@
+{% load static %}
+<section class="mt-[70px] sm:mt-[120px] md:mt-[60px] lg:mt-10">
+		<div class="pt-[50px] bg-custom-gradient-numbers">
+	<h2 class="text-center font-open font-semibold">
+		<span
+			class="block text-[#1F2B41] text-[40px] leading-[130%] sm:text-[56px] sm:leading-[120%] md:text-[72px]"
+			>Главные цифры</span
+		>
+
+		<span
+			class="block text-[#3F4E6A] text-[24px] leading-[140%] mt-[14px] sm:text-[40px] sm:font-normal sm:leading-[130%] md:leading-[140%]"
+		>
+			вашего будущего бизнеса
+		</span>
+	</h2>
+	<ul
+		area="list-numbers"
+		class="px-4 mt-[30px] grid grid-cols-1 gap-[10px] sm:px-5 sm:mt-[50px] md:grid-cols-2 md:gap-y-[13px] md:gap-x-[37px] md:px-10 md:mt-[60px] lg:justify-center"
+	>
+		<li class="font-open text-white {=$classItem}">
+	<p
+		class="block w-max text-[44px] font-bold leading-[130%] pl-[14px] sm:text-[64px] sm:leading-[140%] sm:pl-5 lg:text-[74px]"
+	>
+		от 600 000 ₽
+	</p>
+	<h3
+		class="block text-[20px] font-semibold leading-[140%] px-5 py-4 bg-[rgba(0,51,128,0.04)] rounded-[20px] -mt-5 sm:text-[28px] sm:py-5 sm:-mt-8 sm:font-normal md:w-[450px] lg:w-[531px] xl0:w-[600px]"
+	>
+		Средняя выручка в месяц
+	</h3>
+</li>
+
+		<li class="font-open text-white md:justify-self-end  ">
+	<p
+		class="block w-max text-[44px] font-bold leading-[130%] pl-[14px] sm:text-[64px] sm:leading-[140%] sm:pl-5 lg:text-[74px]"
+	>
+		от 300 000 ₽
+	</p>
+	<h3
+		class="block text-[20px] font-semibold leading-[140%] px-5 py-4 bg-[rgba(0,51,128,0.04)] rounded-[20px] -mt-5 sm:text-[28px] sm:py-5 sm:-mt-8 sm:font-normal md:w-[450px] lg:w-[531px] xl0:w-[600px]"
+	>
+		Прибыль
+	</h3>
+</li>
+
+		<li class="font-open text-white {=$classItem}">
+	<p
+		class="block w-max text-[44px] font-bold leading-[130%] pl-[14px] sm:text-[64px] sm:leading-[140%] sm:pl-5 lg:text-[74px]"
+	>
+		от 2 000 000 ₽
+	</p>
+	<h3
+		class="block text-[20px] font-semibold leading-[140%] px-5 py-4 bg-[rgba(0,51,128,0.04)] rounded-[20px] -mt-5 sm:text-[28px] sm:py-5 sm:-mt-8 sm:font-normal md:w-[450px] lg:w-[531px] xl0:w-[600px]"
+	>
+		Инвестиции на открытие
+	</h3>
+</li>
+
+		<li class="font-open text-white md:justify-self-end  ">
+	<p
+		class="block w-max text-[44px] font-bold leading-[130%] pl-[14px] sm:text-[64px] sm:leading-[140%] sm:pl-5 lg:text-[74px]"
+	>
+		15 000 ₽
+	</p>
+	<h3
+		class="block text-[20px] font-semibold leading-[140%] px-5 py-4 bg-[rgba(0,51,128,0.04)] rounded-[20px] -mt-5 sm:text-[28px] sm:py-5 sm:-mt-8 sm:font-normal md:w-[450px] lg:w-[531px] xl0:w-[600px]"
+	>
+		Подписка в месяц
+	</h3>
+</li>
+
+		<li class="font-open text-white {=$classItem}">
+	<p
+		class="block w-max text-[44px] font-bold leading-[130%] pl-[14px] sm:text-[64px] sm:leading-[140%] sm:pl-5 lg:text-[74px]"
+	>
+		от 9 месяцев
+	</p>
+	<h3
+		class="block text-[20px] font-semibold leading-[140%] px-5 py-4 bg-[rgba(0,51,128,0.04)] rounded-[20px] -mt-5 sm:text-[28px] sm:py-5 sm:-mt-8 sm:font-normal md:w-[450px] lg:w-[531px] xl0:w-[600px]"
+	>
+		Окупаемость
+	</h3>
+</li>
+
+		<li class="font-open text-white md:justify-self-end  ">
+	<p
+		class="block w-max text-[44px] font-bold leading-[130%] pl-[14px] sm:text-[64px] sm:leading-[140%] sm:pl-5 lg:text-[74px]"
+	>
+		0 ₽
+	</p>
+	<h3
+		class="block text-[20px] font-semibold leading-[140%] px-5 py-4 bg-[rgba(0,51,128,0.04)] rounded-[20px] -mt-5 sm:text-[28px] sm:py-5 sm:-mt-8 sm:font-normal md:w-[450px] lg:w-[531px] xl0:w-[600px]"
+	>
+		Роялти
+	</h3>
+</li>
+
+	</ul>
+
+	<div class="-mt-8 sm:mt-3 md:-mt-[72px]">
+		<picture>
+			<source media="(min-width: 1600px)" srcset="{% static '/images/numbers/avatars-1920.png' %}">
+			<source media="(min-width: 1024px)" srcset="{% static '/images/numbers/avatars-1024.png' %}">
+			<source media="(min-width: 640px)" srcset="{% static '/images/numbers/avatars-640.png' %}">
+			<source media="(max-width: 639px)" srcset="{% static '/images/numbers/avatars-360.png' %}">
+			<img
+					src="{% static '/images/numbers/avatars-360.png' %}"
+					loading="lazy"
+					alt="Главные цифры вашего будущего бизнеса"
+					class=""
+			/>
+		</picture>
+	</div>
+</div>
+
+	</section>

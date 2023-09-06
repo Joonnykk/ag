@@ -12,11 +12,21 @@
     {% vite 'avatargames/js/common.js' 'avatargames/css/common.css' 'home/js/home.js' 'home/css/home.css'%}
     {% include 'metriks/head.html' %}
 </head>
-<body class="bg-[#F7F7FA] group franchise-page">
+<body class="main-page">
     {% include 'header/header.html' %}
     <div>
         <main class="bg-[#F7F7FA]">
-            <h1>Home</h1>
+            {% include 'home/partials/promo.html' %}
+            {% include 'home/partials/games.html' %}
+            {% include 'home/partials/numbers.html' %}
+            {% include 'home/partials/world-vr.html' %}
+            {% include 'home/partials/video.html' %}
+            {% include 'home/partials/news.html' %}
+            {% include 'home/partials/command.html' %}
+            <section class="mt-[50px] md:mt-[90px] lg:mt-[100px]">
+		        {% include 'discount/discount.html' %}
+	        </section>
+
         </main>
     </div>
     {% include 'footer/footer.html' %}

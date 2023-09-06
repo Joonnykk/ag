@@ -3,6 +3,7 @@ import "../css/header.css";
 import "../css/footer.css";
 import "../css/form/form.css";
 import "../css/form/messages/style.css";
+import "../css/discount.css";
 
 import {
 	mobileMenuOpen,
