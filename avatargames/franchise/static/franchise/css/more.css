@@ -1,0 +1,18 @@
+@media (min-width: 1280px) {
+	.eighteenthScene .content {
+		margin: 0 auto;
+		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.eighteenthScene .content {
+		max-width: 1400px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.eighteenthScene .content > div {
+		margin-top: 100px;
+	}
+}

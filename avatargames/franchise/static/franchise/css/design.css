@@ -1,0 +1,33 @@
+.sixteenthScene.swiper .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+    padding: 20px 0px;
+}
+
+.sixteenthScene.swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D0D0E5;
+}
+
+.sixteenthScene.swiper .swiper-pagination .swiper-pagination-bullet:hover {
+    cursor: pointer;
+}
+
+.sixteenthScene.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #333333;
+}
+
+@media (min-width: 1024px) {
+    .sixteenthScene.swiper .swiper-slide {
+        max-width: 827px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sixteenthScene.swiper .swiper-slide {
+        max-width: 1098px;
+    }
+}

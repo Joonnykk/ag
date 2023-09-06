@@ -1,536 +1,537 @@
+{% load static %}
 <section
-	id="plans"
-	class="twelfthScene py-[25px] pt-[60px] sm:py-[35px] md:py-[50px] lg:py-[60px]"
+        id="plans"
+        class="twelfthScene py-[25px] pt-[60px] sm:py-[35px] md:py-[50px] lg:py-[60px]"
 >
-	<div class="container md:px-5 lg:max-w-[1024px]">
-		<div class="overflow-hidden">
-			<h2
-				class="text-[56px] leading-[67px] text-center font-semibold md:text-[96px] md:leading-[115px] twelfthScene-animate"
-			>
-				Стоимость
-			</h2>
-		</div>
+    <div class="container md:px-5 lg:max-w-[1024px]">
+        <div class="overflow-hidden">
+            <h2
+                    class="text-[56px] leading-[67px] text-center font-semibold md:text-[96px] md:leading-[115px] twelfthScene-animate"
+            >
+                Стоимость
+            </h2>
+        </div>
 
-		<div class="overflow-hidden">
-			<h6
-				class="text-[24px] leading-[34px] text-[#B6B6B6] mt-2.5 text-center mb-[30px] sm:mt-5 sm:mb-[30px] md:text-[20px] md:leading-[32px] md:mt-2.5 md:mb-9 twelfthScene-animate"
-			>
-				Игровой софт
-			</h6>
-		</div>
+        <div class="overflow-hidden">
+            <h6
+                    class="text-[24px] leading-[34px] text-[#B6B6B6] mt-2.5 text-center mb-[30px] sm:mt-5 sm:mb-[30px] md:text-[20px] md:leading-[32px] md:mt-2.5 md:mb-9 twelfthScene-animate"
+            >
+                Игровой софт
+            </h6>
+        </div>
 
-		<div
-	class="tabs flex flex-col px-2 py-1.5 bg-white rounded-[25px] sm:flex-row sm:justify-between sm:max-w-[477px] md:max-w-[610px] sm:mx-auto"
+        <div
+                class="tabs flex flex-col px-2 py-1.5 bg-white rounded-[25px] sm:flex-row sm:justify-between sm:max-w-[477px] md:max-w-[610px] sm:mx-auto"
+        >
+            <div
+                    data-name="arena"
+                    aria-checked="true"
+                    class="tab uppercase text-[16px] leading-[24px] tracking-wide rounded-[25px] text-center
+flex justify-center items-center px-3 py-3.5
+sm:text-[13px] sm:tracking-tight sm:px-1 sm:py-1.5
+md:text-[16px] md:px-4 md:py-3"
+            >
+                <span>Avatar Battle</span>
+            </div>
+
+            <div
+                    data-name="avatar"
+                    aria-checked="false"
+                    class="tab uppercase text-[16px] leading-[24px] tracking-wide rounded-[25px] text-center
+flex justify-center items-center px-3 py-3.5
+sm:text-[13px] sm:tracking-tight sm:px-1 sm:py-1.5
+md:text-[16px] md:px-4 md:py-3"
+            >
+                <span>AVATAR PARTY GAMES</span>
+            </div>
+
+            <div
+                    data-name="zombies"
+                    aria-checked="false"
+                    class="tab uppercase text-[16px] leading-[24px] tracking-wide rounded-[25px] text-center
+flex justify-center items-center px-3 py-3.5
+sm:text-[13px] sm:tracking-tight sm:px-1 sm:py-1.5
+md:text-[16px] md:px-4 md:py-3"
+            >
+                <span>Avatars vs Zombies</span>
+            </div>
+        </div>
+
+
+        <div class="plans lg:pt-2" data-name="avatar" aria-checked="true">
+            <div class="plans swiper">
+                <div class="plans swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="arena md:grid md:grid-cols-2 md:gap-x-[10px]">
+                            <div class="flex justify-center">
+                                <div
+                                        class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-optimal-card rounded-[20px] text-white mt-[30px] sm:w-[482px] sm:mx-auto md:w-[487px]"
+                                >
+                                    <h6 class="text-[33px] leading-[33px] uppercase text-white text-center">
+                                        optimal
+                                    </h6>
+
+                                    <div class="relative flex flex-col pt-4 items-center justify-center">
+                                        <div>
+<span
+        class="text-[24px] leading-[24px] line-through text-[#FFFFFF]"
 >
-	<div
-        data-name="arena"
-        aria-checked="true"
-        class="tab uppercase text-[16px] leading-[24px] tracking-wide rounded-[25px] text-center
-              flex justify-center items-center px-3 py-3.5
-              sm:text-[13px] sm:tracking-tight sm:px-1 sm:py-1.5
-              md:text-[16px] md:px-4 md:py-3"
+
+</span>
+                                        </div>
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+500 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="mt-1 text-[16px] text-center leading-[22px] sm:text-[22px] text-[#FFFFFF]"
+                                    >
+                                        Базовая лицензия на игру
+                                    </div>
+
+                                    <div class="mt-[24px] flex justify-center">
+                                        <img src="{% static '/images/prices/plus_white.svg' %}"/>
+                                    </div>
+
+                                    <div class="relative flex pt-[24px] justify-center">
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+15 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+
+                                        <div
+                                                class="rounded-[30px] py-1.5 px-2 bg-[#FFFE74] flex items-center absolute -top-2.5 sm:-top-[33px] right-4 sm:right-[80px] z-10 text-center text-[12px] leading-[12px] text-[#0A0A0C]"
+                                        >
+                                            со 2 месяца
+                                        </div>
+
+                                        <div class="absolute -right-1 top-1 sm:-top-[16px] sm:right-[58px]">
+                                            <img src="{% static '/images/prices/arrow_yellow.svg' %}"/>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="flex justify-center text-[16px] sm:text-[22px] leading-[32px] text-[#FFFFFF]"
+                                    >
+                                        <span> Подписка обязательна </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-center">
+                                <div
+                                        class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-premium-card rounded-[20px] mt-2.5 sm:mt-5 md:mt-[30px] text-white sm:w-[482px] sm:mx-auto md:w-[487px]"
+                                >
+                                    <h6 class="text-[33px] leading-[100%] uppercase text-white text-center">
+                                        PREMIUM
+                                    </h6>
+
+                                    <div class="relative flex flex-col pt-4 items-center justify-center">
+                                        <div>
+<span class="text-[24px] leading-[24px] line-through text-white">
+
+</span>
+                                        </div>
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+900 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="mt-1 text-center text-[16px] sm:text-[22px] leading-[22px] text-white"
+                                    >
+                                        Неограниченая лицензия на игру
+                                    </div>
+
+                                    <div class="flex justify-center mt-6">
+                                        <img src="{% static '/images/prices/plus_white.svg' %}"/>
+                                    </div>
+
+                                    <div class="relative flex pt-[24px] justify-center">
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+15 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="flex justify-center text-[16px] mt-1 sm:text-[22px] leading-[30px] text-white"
+                                    >
+                                        <span> Подписка в подарок </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-center md:col-span-2">
+                                <div
+                                        class="flex flex-col px-5 md:px-[43px] py-[30px] md:py-[22px] h-auto w-full bg-testDrive-card text-white rounded-[16px] mt-2.5 sm:m-5 md:mt-2.5 md:mb-0 sm:w-[482px] sm:mx-auto md:w-full md:flex-row md:items-center md:gap-[33px]"
+                                >
+                                    <h6
+                                            class="text-[50px] sm:text-[70px] md:text-[80px] leading-[50px] uppercase font-light text-center tracking-[1px] sm:tracking-[1.4px] md:tracking-[1.6px]"
+                                    >
+                                        test drive
+                                    </h6>
+
+                                    <div>
+                                        <div
+                                                class="relative flex pt-[30px] justify-center md:pt-0 md:justify-start"
+                                        >
+                                            <div>
+<span class="font-bold text-[48px] leading-[48px]">
+50 000
+</span>
+                                                <span class="font-semibold text-[48px] leading-[48px]">
+₽
+</span>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                                class="text-[20px] leading-[30px] mt-[25px] text-center max-w-[245px] sm:max-w-[360px] sm:leading-[32px] sm:mt-[25px] mx-auto md:max-w-none md:text-[16px] md:text-left md:mt-0"
+                                        >
+                                            <span> Сомневаетесь? Возьмите тест-драйв продукта на месяц </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="avatar md:grid md:grid-cols-2 md:gap-x-[10px]">
+                            <div class="flex justify-center">
+                                <div
+                                        class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-optimal-card rounded-[20px] text-white mt-[30px] sm:w-[482px] sm:mx-auto md:w-[487px]"
+                                >
+                                    <h6 class="text-[33px] leading-[33px] uppercase text-white text-center">
+                                        optimal
+                                    </h6>
+
+                                    <div class="relative flex flex-col pt-4 items-center justify-center">
+                                        <div>
+<span
+        class="text-[24px] leading-[24px] line-through text-[#FFFFFF]"
 >
-  <span>Avatar Battle</span>
-</div>
 
-	<div
-        data-name="avatar"
-        aria-checked="false"
-        class="tab uppercase text-[16px] leading-[24px] tracking-wide rounded-[25px] text-center
-              flex justify-center items-center px-3 py-3.5
-              sm:text-[13px] sm:tracking-tight sm:px-1 sm:py-1.5
-              md:text-[16px] md:px-4 md:py-3"
+</span>
+                                        </div>
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+500 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="mt-1 text-[16px] text-center leading-[22px] sm:text-[22px] text-[#FFFFFF]"
+                                    >
+                                        Базовая лицензия на игру
+                                    </div>
+
+                                    <div class="mt-[24px] flex justify-center">
+                                        <img src="{% static '/images/prices/plus_white.svg' %}"/>
+                                    </div>
+
+                                    <div class="relative flex pt-[24px] justify-center">
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+15 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+
+                                        <div
+                                                class="rounded-[30px] py-1.5 px-2 bg-[#FFFE74] flex items-center absolute -top-2.5 sm:-top-[33px] right-4 sm:right-[80px] z-10 text-center text-[12px] leading-[12px] text-[#0A0A0C]"
+                                        >
+                                            со 2 месяца
+                                        </div>
+
+                                        <div class="absolute -right-1 top-1 sm:-top-[16px] sm:right-[58px]">
+                                            <img src="{% static '/images/prices/arrow_yellow.svg' %}"/>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="flex justify-center text-[16px] sm:text-[22px] leading-[32px] text-[#FFFFFF]"
+                                    >
+                                        <span> Подписка обязательна </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-center">
+                                <div
+                                        class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-premium-card rounded-[20px] mt-2.5 sm:mt-5 md:mt-[30px] text-white sm:w-[482px] sm:mx-auto md:w-[487px]"
+                                >
+                                    <h6 class="text-[33px] leading-[100%] uppercase text-white text-center">
+                                        PREMIUM
+                                    </h6>
+
+                                    <div class="relative flex flex-col pt-4 items-center justify-center">
+                                        <div>
+<span class="text-[24px] leading-[24px] line-through text-white">
+
+</span>
+                                        </div>
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+900 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="mt-1 text-center text-[16px] sm:text-[22px] leading-[22px] text-white"
+                                    >
+                                        Неограниченая лицензия на игру
+                                    </div>
+
+                                    <div class="flex justify-center mt-6">
+                                        <img src="{% static '/images/prices/plus_white.svg' %}"/>
+                                    </div>
+
+                                    <div class="relative flex pt-[24px] justify-center">
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+15 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="flex justify-center text-[16px] mt-1 sm:text-[22px] leading-[30px] text-white"
+                                    >
+                                        <span> Подписка в подарок </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-center md:col-span-2">
+                                <div
+                                        class="flex flex-col px-5 md:px-[43px] py-[30px] md:py-[22px] h-auto w-full bg-testDrive-card text-white rounded-[16px] mt-2.5 sm:m-5 md:mt-2.5 md:mb-0 sm:w-[482px] sm:mx-auto md:w-full md:flex-row md:items-center md:gap-[33px]"
+                                >
+                                    <h6
+                                            class="text-[50px] sm:text-[70px] md:text-[80px] leading-[50px] uppercase font-light text-center tracking-[1px] sm:tracking-[1.4px] md:tracking-[1.6px]"
+                                    >
+                                        test drive
+                                    </h6>
+
+                                    <div>
+                                        <div
+                                                class="relative flex pt-[30px] justify-center md:pt-0 md:justify-start"
+                                        >
+                                            <div>
+<span class="font-bold text-[48px] leading-[48px]">
+50 000
+</span>
+                                                <span class="font-semibold text-[48px] leading-[48px]">
+₽
+</span>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                                class="text-[20px] leading-[30px] mt-[25px] text-center max-w-[245px] sm:max-w-[360px] sm:leading-[32px] sm:mt-[25px] mx-auto md:max-w-none md:text-[16px] md:text-left md:mt-0"
+                                        >
+                                            <span> Сомневаетесь? Возьмите тест-драйв продукта на месяц </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="zombie md:grid md:grid-cols-2 md:gap-x-[10px]">
+                            <div class="flex justify-center">
+                                <div
+                                        class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-optimal-card rounded-[20px] text-white mt-[30px] sm:w-[482px] sm:mx-auto md:w-[487px]"
+                                >
+                                    <h6 class="text-[33px] leading-[33px] uppercase text-white text-center">
+                                        optimal
+                                    </h6>
+
+                                    <div class="relative flex flex-col pt-4 items-center justify-center">
+                                        <div>
+<span
+        class="text-[24px] leading-[24px] line-through text-[#FFFFFF]"
 >
-  <span>AVATAR PARTY GAMES</span>
-</div>
-
-	<div
-        data-name="zombies"
-        aria-checked="false"
-        class="tab uppercase text-[16px] leading-[24px] tracking-wide rounded-[25px] text-center
-              flex justify-center items-center px-3 py-3.5
-              sm:text-[13px] sm:tracking-tight sm:px-1 sm:py-1.5
-              md:text-[16px] md:px-4 md:py-3"
->
-  <span>Avatars vs Zombies</span>
-</div>
-</div>
-
-
-		<div class="plans lg:pt-2" data-name="avatar" aria-checked="true">
-	<div class="plans swiper">
-		<div class="plans swiper-wrapper">
-			<div class="swiper-slide">
-				<div class="arena md:grid md:grid-cols-2 md:gap-x-[10px]">
-					<div class="flex justify-center">
-						<div
-	class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-optimal-card rounded-[20px] text-white mt-[30px] sm:w-[482px] sm:mx-auto md:w-[487px]"
->
-	<h6 class="text-[33px] leading-[33px] uppercase text-white text-center">
-		optimal
-	</h6>
-
-	<div class="relative flex flex-col pt-4 items-center justify-center">
-		<div>
-			<span
-				class="text-[24px] leading-[24px] line-through text-[#FFFFFF]"
-			>
-
-			</span>
-		</div>
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				500 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="mt-1 text-[16px] text-center leading-[22px] sm:text-[22px] text-[#FFFFFF]"
-	>
-		Базовая лицензия на игру
-	</div>
-
-	<div class="mt-[24px] flex justify-center">
-		<img src="/assets/images/plus_white-e270032f.webp" />
-	</div>
-
-	<div class="relative flex pt-[24px] justify-center">
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				15 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-
-		<div
-			class="rounded-[30px] py-1.5 px-2 bg-[#FFFE74] flex items-center absolute -top-2.5 sm:-top-[33px] right-4 sm:right-[80px] z-10 text-center text-[12px] leading-[12px] text-[#0A0A0C]"
-		>
-			со 2 месяца
-		</div>
-
-		<div class="absolute -right-1 top-1 sm:-top-[16px] sm:right-[58px]">
-			<img src="/assets/images/arrow_yellow-ef252a8d.webp" />
-		</div>
-	</div>
-
-	<div
-		class="flex justify-center text-[16px] sm:text-[22px] leading-[32px] text-[#FFFFFF]"
-	>
-		<span> Подписка обязательна </span>
-	</div>
-</div>
-
-					</div>
-
-					<div class="flex justify-center">
-						<div
-	class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-premium-card rounded-[20px] mt-2.5 sm:mt-5 md:mt-[30px] text-white sm:w-[482px] sm:mx-auto md:w-[487px]"
->
-	<h6 class="text-[33px] leading-[100%] uppercase text-white text-center">
-		PREMIUM
-	</h6>
-
-	<div class="relative flex flex-col pt-4 items-center justify-center">
-		<div>
-			<span class="text-[24px] leading-[24px] line-through text-white">
-
-			</span>
-		</div>
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				900 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="mt-1 text-center text-[16px] sm:text-[22px] leading-[22px] text-white"
-	>
-		Неограниченая лицензия на игру
-	</div>
-
-	<div class="flex justify-center mt-6">
-		<img src="/assets/images/plus_white-e270032f.webp" />
-	</div>
-
-	<div class="relative flex pt-[24px] justify-center">
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				15 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="flex justify-center text-[16px] mt-1 sm:text-[22px] leading-[30px] text-white"
-	>
-		<span> Подписка в подарок </span>
-	</div>
-</div>
-
-					</div>
-
-					<div class="flex justify-center md:col-span-2">
-						<div
-	class="flex flex-col px-5 md:px-[43px] py-[30px] md:py-[22px] h-auto w-full bg-testDrive-card text-white rounded-[16px] mt-2.5 sm:m-5 md:mt-2.5 md:mb-0 sm:w-[482px] sm:mx-auto md:w-full md:flex-row md:items-center md:gap-[33px]"
->
-	<h6
-		class="text-[50px] sm:text-[70px] md:text-[80px] leading-[50px] uppercase font-light text-center tracking-[1px] sm:tracking-[1.4px] md:tracking-[1.6px]"
-	>
-		test drive
-	</h6>
-
-	<div>
-		<div
-			class="relative flex pt-[30px] justify-center md:pt-0 md:justify-start"
-		>
-			<div>
-				<span class="font-bold text-[48px] leading-[48px]">
-					50 000
-				</span>
-				<span class="font-semibold text-[48px] leading-[48px]">
-					₽
-				</span>
-			</div>
-		</div>
-
-		<div
-			class="text-[20px] leading-[30px] mt-[25px] text-center max-w-[245px] sm:max-w-[360px] sm:leading-[32px] sm:mt-[25px] mx-auto md:max-w-none md:text-[16px] md:text-left md:mt-0"
-		>
-			<span> Сомневаетесь? Возьмите тест-драйв продукта на месяц </span>
-		</div>
-	</div>
-</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="swiper-slide">
-				<div class="avatar md:grid md:grid-cols-2 md:gap-x-[10px]">
-					<div class="flex justify-center">
-						<div
-	class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-optimal-card rounded-[20px] text-white mt-[30px] sm:w-[482px] sm:mx-auto md:w-[487px]"
->
-	<h6 class="text-[33px] leading-[33px] uppercase text-white text-center">
-		optimal
-	</h6>
-
-	<div class="relative flex flex-col pt-4 items-center justify-center">
-		<div>
-			<span
-				class="text-[24px] leading-[24px] line-through text-[#FFFFFF]"
-			>
-
-			</span>
-		</div>
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				500 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="mt-1 text-[16px] text-center leading-[22px] sm:text-[22px] text-[#FFFFFF]"
-	>
-		Базовая лицензия на игру
-	</div>
-
-	<div class="mt-[24px] flex justify-center">
-		<img src="/assets/images/plus_white-e270032f.webp" />
-	</div>
-
-	<div class="relative flex pt-[24px] justify-center">
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				15 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-
-		<div
-			class="rounded-[30px] py-1.5 px-2 bg-[#FFFE74] flex items-center absolute -top-2.5 sm:-top-[33px] right-4 sm:right-[80px] z-10 text-center text-[12px] leading-[12px] text-[#0A0A0C]"
-		>
-			со 2 месяца
-		</div>
-
-		<div class="absolute -right-1 top-1 sm:-top-[16px] sm:right-[58px]">
-			<img src="/assets/images/arrow_yellow-ef252a8d.webp" />
-		</div>
-	</div>
-
-	<div
-		class="flex justify-center text-[16px] sm:text-[22px] leading-[32px] text-[#FFFFFF]"
-	>
-		<span> Подписка обязательна </span>
-	</div>
-</div>
-
-					</div>
-
-					<div class="flex justify-center">
-						<div
-	class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-premium-card rounded-[20px] mt-2.5 sm:mt-5 md:mt-[30px] text-white sm:w-[482px] sm:mx-auto md:w-[487px]"
->
-	<h6 class="text-[33px] leading-[100%] uppercase text-white text-center">
-		PREMIUM
-	</h6>
-
-	<div class="relative flex flex-col pt-4 items-center justify-center">
-		<div>
-			<span class="text-[24px] leading-[24px] line-through text-white">
-
-			</span>
-		</div>
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				900 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="mt-1 text-center text-[16px] sm:text-[22px] leading-[22px] text-white"
-	>
-		Неограниченая лицензия на игру
-	</div>
-
-	<div class="flex justify-center mt-6">
-		<img src="/assets/images/plus_white-e270032f.webp" />
-	</div>
-
-	<div class="relative flex pt-[24px] justify-center">
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				15 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="flex justify-center text-[16px] mt-1 sm:text-[22px] leading-[30px] text-white"
-	>
-		<span> Подписка в подарок </span>
-	</div>
-</div>
-
-					</div>
-
-					<div class="flex justify-center md:col-span-2">
-						<div
-	class="flex flex-col px-5 md:px-[43px] py-[30px] md:py-[22px] h-auto w-full bg-testDrive-card text-white rounded-[16px] mt-2.5 sm:m-5 md:mt-2.5 md:mb-0 sm:w-[482px] sm:mx-auto md:w-full md:flex-row md:items-center md:gap-[33px]"
->
-	<h6
-		class="text-[50px] sm:text-[70px] md:text-[80px] leading-[50px] uppercase font-light text-center tracking-[1px] sm:tracking-[1.4px] md:tracking-[1.6px]"
-	>
-		test drive
-	</h6>
-
-	<div>
-		<div
-			class="relative flex pt-[30px] justify-center md:pt-0 md:justify-start"
-		>
-			<div>
-				<span class="font-bold text-[48px] leading-[48px]">
-					50 000
-				</span>
-				<span class="font-semibold text-[48px] leading-[48px]">
-					₽
-				</span>
-			</div>
-		</div>
-
-		<div
-			class="text-[20px] leading-[30px] mt-[25px] text-center max-w-[245px] sm:max-w-[360px] sm:leading-[32px] sm:mt-[25px] mx-auto md:max-w-none md:text-[16px] md:text-left md:mt-0"
-		>
-			<span> Сомневаетесь? Возьмите тест-драйв продукта на месяц </span>
-		</div>
-	</div>
-</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="swiper-slide">
-				<div class="zombie md:grid md:grid-cols-2 md:gap-x-[10px]">
-					<div class="flex justify-center">
-						<div
-	class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-optimal-card rounded-[20px] text-white mt-[30px] sm:w-[482px] sm:mx-auto md:w-[487px]"
->
-	<h6 class="text-[33px] leading-[33px] uppercase text-white text-center">
-		optimal
-	</h6>
-
-	<div class="relative flex flex-col pt-4 items-center justify-center">
-		<div>
-			<span
-				class="text-[24px] leading-[24px] line-through text-[#FFFFFF]"
-			>
-
-			</span>
-		</div>
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				250 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="mt-1 text-[16px] text-center leading-[22px] sm:text-[22px] text-[#FFFFFF]"
-	>
-		Базовая лицензия на игру
-	</div>
-
-	<div class="mt-[24px] flex justify-center">
-		<img src="/assets/images/plus_white-e270032f.webp" />
-	</div>
-
-	<div class="relative flex pt-[24px] justify-center">
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				15 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-
-		<div
-			class="rounded-[30px] py-1.5 px-2 bg-[#FFFE74] flex items-center absolute -top-2.5 sm:-top-[33px] right-4 sm:right-[80px] z-10 text-center text-[12px] leading-[12px] text-[#0A0A0C]"
-		>
-			со 2 месяца
-		</div>
-
-		<div class="absolute -right-1 top-1 sm:-top-[16px] sm:right-[58px]">
-			<img src="/assets/images/arrow_yellow-ef252a8d.webp" />
-		</div>
-	</div>
-
-	<div
-		class="flex justify-center text-[16px] sm:text-[22px] leading-[32px] text-[#FFFFFF]"
-	>
-		<span> Подписка обязательна </span>
-	</div>
-</div>
-
-					</div>
-
-					<div class="flex justify-center">
-						<div
-	class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-premium-card rounded-[20px] mt-2.5 sm:mt-5 md:mt-[30px] text-white sm:w-[482px] sm:mx-auto md:w-[487px]"
->
-	<h6 class="text-[33px] leading-[100%] uppercase text-white text-center">
-		PREMIUM
-	</h6>
-
-	<div class="relative flex flex-col pt-4 items-center justify-center">
-		<div>
-			<span class="text-[24px] leading-[24px] line-through text-white">
-
-			</span>
-		</div>
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				650 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="mt-1 text-center text-[16px] sm:text-[22px] leading-[22px] text-white"
-	>
-		Неограниченая лицензия на игру
-	</div>
-
-	<div class="flex justify-center mt-6">
-		<img src="/assets/images/plus_white-e270032f.webp" />
-	</div>
-
-	<div class="relative flex pt-[24px] justify-center">
-		<div>
-			<span class="font-bold text-[48px] leading-[48px]">
-				15 000
-			</span>
-			<span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
-		</div>
-	</div>
-
-	<div
-		class="flex justify-center text-[16px] mt-1 sm:text-[22px] leading-[30px] text-white"
-	>
-		<span> Подписка в подарок </span>
-	</div>
-</div>
-
-					</div>
-
-					<div class="flex justify-center md:col-span-2">
-						<div
-	class="flex flex-col px-5 md:px-[43px] py-[30px] md:py-[22px] h-auto w-full bg-testDrive-card text-white rounded-[16px] mt-2.5 sm:m-5 md:mt-2.5 md:mb-0 sm:w-[482px] sm:mx-auto md:w-full md:flex-row md:items-center md:gap-[33px]"
->
-	<h6
-		class="text-[50px] sm:text-[70px] md:text-[80px] leading-[50px] uppercase font-light text-center tracking-[1px] sm:tracking-[1.4px] md:tracking-[1.6px]"
-	>
-		test drive
-	</h6>
-
-	<div>
-		<div
-			class="relative flex pt-[30px] justify-center md:pt-0 md:justify-start"
-		>
-			<div>
-				<span class="font-bold text-[48px] leading-[48px]">
-					50 000
-				</span>
-				<span class="font-semibold text-[48px] leading-[48px]">
-					₽
-				</span>
-			</div>
-		</div>
-
-		<div
-			class="text-[20px] leading-[30px] mt-[25px] text-center max-w-[245px] sm:max-w-[360px] sm:leading-[32px] sm:mt-[25px] mx-auto md:max-w-none md:text-[16px] md:text-left md:mt-0"
-		>
-			<span> Сомневаетесь? Возьмите тест-драйв продукта на месяц </span>
-		</div>
-	</div>
-</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-		<div
-			class="flex flex-col items-center justify-center mt-[30px] md:mt-10"
-		>
-			<button
-				data-role="open-order-form"
-				onclick="ym(92197085,'reachGoal','order_plans')"
-				class="py-4 font-semibold text-center w-full border border-[#FEFD02] bg-[#FEFD02] text-[#0A0A0C] text-[22px] rounded-full leading-[22px] sm:px-8 sm:w-auto transition-all duration-300 hover:bg-[#6A35FF] hover:border-[#6A35FF] hover:text-white shadow-[0px_4px_19px_0px_rgba(173,173,51,0.20)]"
-			>
-				Оставить заявку
-			</button>
-
-			<p
-				class="text-[14px] leading-[18px] text-center text-[#808796] mt-5"
-			>
-				*Дизайн-проект арены и оборудование <br class="md:hidden" />
-				не входит в стоимость тарифов
-			</p>
-		</div>
-	</div>
+
+</span>
+                                        </div>
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+250 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="mt-1 text-[16px] text-center leading-[22px] sm:text-[22px] text-[#FFFFFF]"
+                                    >
+                                        Базовая лицензия на игру
+                                    </div>
+
+                                    <div class="mt-[24px] flex justify-center">
+                                        <img src="{% static '/images/prices/plus_white.svg' %}"/>
+                                    </div>
+
+                                    <div class="relative flex pt-[24px] justify-center">
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+15 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+
+                                        <div
+                                                class="rounded-[30px] py-1.5 px-2 bg-[#FFFE74] flex items-center absolute -top-2.5 sm:-top-[33px] right-4 sm:right-[80px] z-10 text-center text-[12px] leading-[12px] text-[#0A0A0C]"
+                                        >
+                                            со 2 месяца
+                                        </div>
+
+                                        <div class="absolute -right-1 top-1 sm:-top-[16px] sm:right-[58px]">
+                                            <img src="{% static '/images/prices/arrow_yellow.svg' %}"/>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="flex justify-center text-[16px] sm:text-[22px] leading-[32px] text-[#FFFFFF]"
+                                    >
+                                        <span> Подписка обязательна </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-center">
+                                <div
+                                        class="flex flex-col px-5 pb-[30px] pt-[28px] h-auto w-full bg-premium-card rounded-[20px] mt-2.5 sm:mt-5 md:mt-[30px] text-white sm:w-[482px] sm:mx-auto md:w-[487px]"
+                                >
+                                    <h6 class="text-[33px] leading-[100%] uppercase text-white text-center">
+                                        PREMIUM
+                                    </h6>
+
+                                    <div class="relative flex flex-col pt-4 items-center justify-center">
+                                        <div>
+<span class="text-[24px] leading-[24px] line-through text-white">
+
+</span>
+                                        </div>
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+650 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="mt-1 text-center text-[16px] sm:text-[22px] leading-[22px] text-white"
+                                    >
+                                        Неограниченая лицензия на игру
+                                    </div>
+
+                                    <div class="flex justify-center mt-6">
+                                        <img src="{% static '/images/prices/plus_white.svg' %}"/>
+                                    </div>
+
+                                    <div class="relative flex pt-[24px] justify-center">
+                                        <div>
+<span class="font-bold text-[48px] leading-[48px]">
+15 000
+</span>
+                                            <span class="font-semibold text-[48px] leading-[48px]"> ₽ </span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                            class="flex justify-center text-[16px] mt-1 sm:text-[22px] leading-[30px] text-white"
+                                    >
+                                        <span> Подписка в подарок </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-center md:col-span-2">
+                                <div
+                                        class="flex flex-col px-5 md:px-[43px] py-[30px] md:py-[22px] h-auto w-full bg-testDrive-card text-white rounded-[16px] mt-2.5 sm:m-5 md:mt-2.5 md:mb-0 sm:w-[482px] sm:mx-auto md:w-full md:flex-row md:items-center md:gap-[33px]"
+                                >
+                                    <h6
+                                            class="text-[50px] sm:text-[70px] md:text-[80px] leading-[50px] uppercase font-light text-center tracking-[1px] sm:tracking-[1.4px] md:tracking-[1.6px]"
+                                    >
+                                        test drive
+                                    </h6>
+
+                                    <div>
+                                        <div
+                                                class="relative flex pt-[30px] justify-center md:pt-0 md:justify-start"
+                                        >
+                                            <div>
+<span class="font-bold text-[48px] leading-[48px]">
+50 000
+</span>
+                                                <span class="font-semibold text-[48px] leading-[48px]">
+₽
+</span>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                                class="text-[20px] leading-[30px] mt-[25px] text-center max-w-[245px] sm:max-w-[360px] sm:leading-[32px] sm:mt-[25px] mx-auto md:max-w-none md:text-[16px] md:text-left md:mt-0"
+                                        >
+                                            <span> Сомневаетесь? Возьмите тест-драйв продукта на месяц </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div
+                class="flex flex-col items-center justify-center mt-[30px] md:mt-10"
+        >
+            <button
+                    data-role="open-order-form"
+                    onclick="ym(92197085,'reachGoal','order_plans')"
+                    class="py-4 font-semibold text-center w-full border border-[#FEFD02] bg-[#FEFD02] text-[#0A0A0C] text-[22px] rounded-full leading-[22px] sm:px-8 sm:w-auto transition-all duration-300 hover:bg-[#6A35FF] hover:border-[#6A35FF] hover:text-white shadow-[0px_4px_19px_0px_rgba(173,173,51,0.20)]"
+            >
+                Оставить заявку
+            </button>
+
+            <p
+                    class="text-[14px] leading-[18px] text-center text-[#808796] mt-5"
+            >
+                *Дизайн-проект арены и оборудование <br class="md:hidden"/>
+                не входит в стоимость тарифов
+            </p>
+        </div>
+    </div>
 </section>

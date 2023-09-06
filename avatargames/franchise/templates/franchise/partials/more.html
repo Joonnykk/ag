@@ -1,14 +1,15 @@
+{% load static %}
 <section
 	class="eighteenthScene mt-[35px] mb-[50px] sm:mt-[65px] md:mt-[90px] lg:mt-0"
 >
 	<div class="relative h-[640px] w-full sm:h-[682px] md:h-[380px] lg:h-auto">
 		<picture>
-			<source media="(min-width: 1280px)" srcset="/assets/images/bg-1280-2e3c0a5a.webp ">
-			<source media="(min-width: 1024px)" srcset="/assets/images/bg-1024-f83db843.webp ">
-			<source media="(min-width: 640px)" srcset="/assets/images/bg-640-67179cb6.webp ">
-			<source media="(max-width: 639px)" srcset="/assets/images/bg-360-033d1a30.webp ">
+			<source media="(min-width: 1280px)" srcset="{% static '/images/more/bg-1280.jpg' %}">
+			<source media="(min-width: 1024px)" srcset="{% static '/images/more/bg-1024.jpg' %}">
+			<source media="(min-width: 640px)" srcset="{% static '/images/more/bg-640.jpg' %}">
+			<source media="(max-width: 639px)" srcset="{% static '/images/more/bg-360.jpg' %}">
 			<img
-					src="/assets/images/bg-360-033d1a30.webp"
+					src="{% static '/images/more/bg-360.jpg' %}"
 					loading="lazy"
 					alt="Главные цифры вашего будущего бизнеса"
 					class="w-full h-full object-cover"
