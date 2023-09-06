@@ -1,0 +1,119 @@
+.advantages-swiper-pagination-sm {
+	display: flex;
+	justify-content: center;
+	column-gap: 8px;
+}
+
+.advantages-swiper-pagination-sm .swiper-pagination-bullet {
+	background-color: #d0d0e5;
+	opacity: 1;
+	width: 8px;
+	height: 8px;
+	display: flex;
+	border-radius: 50%;
+}
+
+.advantages-swiper-pagination-sm .swiper-pagination-bullet-active {
+	background-color: #3a3a4a;
+}
+
+#advantages .swiper-slide > div > * {
+	opacity: 0;
+	transform: translateY(25px);
+	transition: all 0.4s;
+}
+
+#advantages .swiper-slide.swiper-slide-active > div > * {
+	opacity: 1;
+	transform: none;
+}
+
+#advantages .swiper-slide.swiper-slide-active > div > *:nth-child(1) {
+	transition-delay: 0.3s;
+}
+#advantages .swiper-slide.swiper-slide-active > div > *:nth-child(2) {
+	transition-delay: 0.4s;
+}
+#advantages .swiper-slide.swiper-slide-active > div > *:nth-child(3) {
+	transition-delay: 0.5s;
+}
+
+#advantages {
+	transition: all 0.3s;
+}
+
+@media (min-width: 640px) {
+	.advantages-swiper-pagination-sm {
+		column-gap: 14px;
+	}
+
+	.advantages-swiper-pagination-sm .swiper-pagination-bullet {
+	}
+}
+
+@media (min-width: 1024px) {
+	.advantages-swiper-pagination-md {
+		flex-direction: column;
+		row-gap: 12px;
+		display: grid;
+	}
+
+	.advantages-swiper-pagination-md .swiper-pagination-bullet {
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		column-gap: 12px;
+	}
+
+	.advantages-swiper-pagination-md .swiper-pagination-bullet:hover {
+		cursor: pointer;
+	}
+
+	.advantages-swiper-pagination-md
+		.swiper-pagination-bullet
+		.advantages-pagination-icon
+		> svg {
+		stroke: #3a3a4a;
+		stroke-width: 1;
+	}
+
+	.advantages-swiper-pagination-md
+		.swiper-pagination-bullet.swiper-pagination-bullet-active
+		.advantages-pagination-icon
+		> svg {
+		stroke: #1268fb;
+		stroke-width: 1.5;
+	}
+
+	.advantages-swiper-pagination-md
+		.swiper-pagination-bullet
+		.advantages-pagination-title {
+		color: #000;
+	}
+
+	.advantages-swiper-pagination-md
+		.swiper-pagination-bullet.swiper-pagination-bullet-active
+		.advantages-pagination-title {
+		font-weight: 600;
+		color: #1268fb;
+	}
+}
+
+@media (min-width: 1366px) {
+	.nineScene-wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1600px) {
+	.nineScene-wrapper {
+		max-width: 1400px;
+	}
+}
+/*#1268FB*/
+/*#3A3A4A*/
