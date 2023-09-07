@@ -15,6 +15,8 @@ export default defineConfig({
                 './franchise/css/franchise.css',
                 './questions/js/questions.js',
                 './questions/css/questions.css',
+                './policy/js/policy.js',
+                './policy/css/policy.css',
                 './comming_soon/js/comming_soon.js',
                 './comming_soon/css/comming_soon.css',
                 ...glob.sync('static/**/*.{js,css}'),

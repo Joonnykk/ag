@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'franchise',
     'questions',
+    'policy',
     'comming_soon'
 ]
 
