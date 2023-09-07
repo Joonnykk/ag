@@ -9,6 +9,8 @@ import "../css/discount.css";
 import { preloader } from "./preloader.js";
 preloader();
 
+import { scrollTopButton } from "./scroll_to_top.js";
+
 import {
 	mobileMenuOpen,
 	openDesktopMenu,
@@ -32,5 +34,5 @@ window.addEventListener("DOMContentLoaded", () => {
     orderFormInit()
 //	activePopupMenuLink();
 //	activeStaticDesktopMenuLink();
-//	scrollTopButton();
+    scrollTopButton();
 });
