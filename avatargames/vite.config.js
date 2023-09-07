@@ -19,6 +19,8 @@ export default defineConfig({
                 './about/css/policy.css',
                 './policy/js/policy.js',
                 './policy/css/policy.css',
+                './news/js/news.js',
+                './news/css/news.css',
                 './comming_soon/js/comming_soon.js',
                 './comming_soon/css/comming_soon.css',
                 ...glob.sync('static/**/*.{js,css}'),
