@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'avatargames',
     'home',
     'franchise',
+    'comming_soon'
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,95 @@
+{% load vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'favicon/favicon.html' %}
+    <title>{% block title%}Avatar games | Сеть арен виртуальной реальности{% endblock %}</title>
+
+    {% vite %}
+    {% vite 'avatargames/js/common.js' 'avatargames/css/common.css' 'comming_soon/js/comming-soon.js' 'comming_soon/css/comming_soon.css'%}
+    {% include 'metriks/head.html' %}
+</head>
+<body class="comming_soon-page bg-[#F5F5F7]">
+    {% include 'header/header.html' %}
+
+    <div area="comming_soon" class="flex-col">
+			<h1 class="font-open text-lg italic">Coming soon...</h1>
+
+			<div id="container" class="mt-[60px]">
+				<button class="face-button">
+					<span class="face-container">
+						<span class="eye left"></span>
+						<span class="eye right"></span>
+						<span class="mouth"></span>
+					</span>
+				</button>
+			</div>
+
+			<button
+				area="button"
+				class="group mt-[90px] h-10 w-[153px] flex items-center pl-[30px] justify-between gap-5 rounded-[50px] overflow-hidden"
+			>
+				<span
+					class="text-[#6A35FF] z-10 group-hover:text-white transition-all duration-500 text-lg font-open font-semibold"
+					>Назад</span
+				>
+				<span class="flex items-center justify-center">
+					<span class="relative right-0 w-10 h-10 z-10">
+						<svg
+							class="group-hover:opacity-0 transition-opacity duration-500 ml-[-2px] opacity-100 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
+							width="10"
+							height="20"
+							viewBox="0 0 10 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9 1L1 10L9 19"
+								stroke="white"
+								stroke-width="1.45455"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<svg
+							class="group-hover:opacity-100 transition-opacity duration-500 opacity-0 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
+							width="21"
+							height="20"
+							viewBox="0 0 21 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M20 10L1 10"
+								stroke="white"
+								stroke-width="1.45455"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M9 1L1 10L9 19"
+								stroke="white"
+								stroke-width="1.45455"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</span>
+				</span>
+				<span
+					class="w-10 h-10 bg-[#6A35FF] transition-all duration-500 rounded-full absolute right-0 group-hover:w-full"
+				></span>
+			</button>
+		</div>
+
+
+    {% include 'form/form.html' %}
+    {% include 'form/messages/success.html' %}
+    {% include 'metriks/body.html' %}
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</body>
+</html>
