@@ -1,0 +1,30 @@
+{% load vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'favicon/favicon.html' %}
+    <title>{% block title%}AVATAR GAMES - Вопрос-ответ{% endblock %}</title>
+
+    {% vite %}
+    {% vite 'avatargames/js/common.js' 'avatargames/css/common.css' 'questions/js/questions.js' 'questions/css/questions.css'%}
+    {% include 'metriks/head.html' %}
+</head>
+<body class="questions-page bg-[#F5F5F7]">
+    {% include 'preloader/preloader.html' %}
+    {% include 'header/header.html' %}
+    <div class="overflow-x-hidden">
+        <main class="font-open">
+            {% include 'questions/partials/title.html' %}
+            {% include 'questions/partials/list.html' %}
+            {% include 'questions/partials/footer.html' %}
+        </main>
+    </div>
+    {% include 'form/form.html' %}
+    {% include 'form/messages/success.html' %}
+	{% include 'scroll_to_top/scroll_to_top.html' %}
+    {% include 'metriks/body.html' %}
+</body>
+</html>

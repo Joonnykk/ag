@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'avatargames',
     'home',
     'franchise',
+    'questions',
     'comming_soon'
 ]
 
