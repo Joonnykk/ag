@@ -72,7 +72,7 @@ export const phoneInputsInit = () => {
 
 					const divFirst = document.createElement("div");
 					const image = document.createElement("img");
-					image.setAttribute("src", `/images/countries/${item.src}`);
+					image.setAttribute("src", `/static/images/countries/${item.src}`);
 					image.setAttribute("loading", `lazy`);
 					image.setAttribute("alt", item.name);
 					divFirst.appendChild(image);
@@ -93,7 +93,7 @@ export const phoneInputsInit = () => {
 
 						phoneSelectTriggerImg.setAttribute(
 							"src",
-							`/images/countries/${src}`
+							`/static/images/countries/${src}`
 						);
 						input.placeholder = mask;
 						Inputmask({
