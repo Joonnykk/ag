@@ -1,0 +1,36 @@
+{% load vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'favicon/favicon.html' %}
+    <title>{% block title%}AVATAR GAMES - О нас{% endblock %}</title>
+
+    {% vite %}
+    {% vite 'avatargames/js/common.js' 'avatargames/css/common.css' 'about/js/about.js' 'about/css/about.css'%}
+    {% include 'metriks/head.html' %}
+</head>
+<body class="bg-[#F5F5F7] policy-page font-open">
+    {% include 'preloader/preloader.html' %}
+    {% include 'header/header.html' %}
+
+    <div>
+        <main class="px-5 mb-[80px] md:px-10 xl:w-[1400px] xl:mx-auto xl:px-0">
+            {% include 'about/partials/breadcrumbs.html' %}
+
+            {% include 'about/partials/title.html' %}
+
+            {% include 'about/partials/content.html' %}
+        </main>
+    </div>
+
+    {% include 'footer/footer-small.html' %}
+
+    {% include 'form/form.html' %}
+    {% include 'form/messages/success.html' %}
+	{% include 'scroll_to_top/scroll_to_top.html' %}
+    {% include 'metriks/body.html' %}
+</body>
+</html>
