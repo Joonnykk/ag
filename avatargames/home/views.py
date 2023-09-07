@@ -8,7 +8,7 @@ def home(request):
 
 
 def offer(request, file_name):
-    with open(f'./files/{file_name}', 'rb') as pdf:
+    with open(f'./files/offer/{file_name}', 'rb') as pdf:
         response = HttpResponse(pdf.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'inline;filename=mypdf.pdf'
         return response
