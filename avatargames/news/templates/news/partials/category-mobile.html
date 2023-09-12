@@ -1,11 +1,13 @@
 <div class="category-mobile-dropdown mt-[28px] md:hidden">
     <div class="relative">
-        <input
-                type="text"
-                readonly
-                class="w-full px-5 py-[10px] rounded-[30px] bg-white border border-solid border-[#EFEFF8] outline-none text-[#6A35FF] cursor-pointer select-none"
-        />
-        <span
+        {% if request.path == '/news/' %}
+             <input
+                    type="text"
+                    readonly
+                    value="Все категории"
+                    class="w-full px-5 py-[10px] rounded-[30px] bg-white border border-solid border-[#EFEFF8] outline-none text-[#6A35FF] cursor-pointer select-none"
+            />
+            <span
                 data-role="arrow"
                 class="absolute right-5 top-2/4 -translate-y-2/4 rotate-180 transition-all duration-300"
         ><svg
@@ -24,6 +26,40 @@
             />
 		</svg>
 	</span>
+        {% else %}
+            {% for category in categories %}
+                {% with "/news/"|add:category.slug|add:"/" as path %}
+                    {% if request.path == path %}
+                         <input
+                                type="text"
+                                readonly
+                                value="{{ category.title }}"
+                                class="w-full px-5 py-[10px] rounded-[30px] bg-white border border-solid border-[#EFEFF8] outline-none text-[#6A35FF] cursor-pointer select-none"
+                        />
+                        <span
+                    data-role="arrow"
+                    class="absolute right-5 top-2/4 -translate-y-2/4 rotate-180 transition-all duration-300"
+            ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        d="M5 7.5L10 12.5L15 7.5"
+                        stroke="#808796"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                />
+            </svg>
+        </span>
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        {% endif %}
+
     </div>
 
     <div
@@ -31,19 +67,21 @@
             class="dropdown-list-category transition-all duration-300"
     >
         <nav
-                class="mt-2 rounded-lg shadow-custom-shadow-menuList border border-[#C8BBFB] bg-white max-h-[320px] py-1 pl-1"
+                class="mt-2 flex flex-col rounded-lg shadow-custom-shadow-menuList border border-[#C8BBFB] bg-white max-h-[320px] py-1 pl-1"
         >
-            <a href="/news/" class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
+            <a href="/news/" class="{% if request.path == '/news/' %}bg-[#f5f5f7]{% endif %}
+                                    py-[10px] px-[14px] rounded-[8px] select-none">
                 Все категории
             </a>
-
-
             {% for category in categories %}
-                <a href="/news/{{ category.slug }}" class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                    {{ category.title }}
-                </a>
+                {% with "/news/"|add:category.slug|add:"/" as path %}
+                    <a href="/news/{{ category.slug }}"
+                       class="{% if request.path == path %}bg-[#f5f5f7]{% endif %}
+                       py-[10px] px-[14px] rounded-[8px] select-none">
+                        {{ category.title }}
+                    </a>
+                {% endwith %}
             {% endfor %}
-
         </nav>
     </div>
 
