@@ -13,9 +13,12 @@
             id="news-types"
             class="mt-5 flex flex-wrap items-center gap-x-[50px] gap-y-[18px] sm:gap-x-5"
     >
-        {{ request.GET }}
         {% for type in types %}
-            {% include 'checkbox/checkbox.html' with type=type checked=True %}
+            {% if type.id|stringformat:"i" in filters %}
+                {% include 'checkbox/checkbox.html' with type=type checked=False %}
+            {% else %}
+                {% include 'checkbox/checkbox.html' with type=type checked=True %}
+            {% endif %}
         {% endfor %}
     </div>
 

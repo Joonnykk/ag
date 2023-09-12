@@ -335,6 +335,10 @@ export const testFormValidate = () => {
 };
 
 export const orderFormInit = () => {
+    orderForm.style.display = 'block'
+    successMessage.style.display = 'block'
+
+
 	orderFormValidate();
 	orderFormSubmit();
 	testFormValidate();

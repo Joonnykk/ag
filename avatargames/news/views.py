@@ -22,21 +22,26 @@ articles = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "1.jp
 
 
 def news(request):
+    filters = request.GET.getlist('ignore')
+
     data = {
         'types': types,
         'categories': categories,
-        'articles': articles
+        'articles': articles,
+        'filters': filters
     }
 
     return render(request, 'news/index.html', context=data)
 
 
 def category(request, category_slug):
-    print(category_slug)
+    filters = request.GET.getlist('ignore')
+
     data = {
         'types': types,
         'categories': categories,
-        'articles': articles
+        'articles': articles,
+        'filters': filters
     }
 
     return render(request, 'news/index.html', context=data)
