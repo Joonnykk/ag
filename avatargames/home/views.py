@@ -1,5 +1,8 @@
+import json
+
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.http import require_POST
 
 
 # Create your views here.
@@ -12,3 +15,11 @@ def offer(request, file_name):
         response = HttpResponse(pdf.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'inline;filename=mypdf.pdf'
         return response
+
+
+@require_POST
+def order_franchise(request):
+    form = json.loads(request.body)
+    print(form["phone"])
+
+    return JsonResponse({"Success": 'Check your email.'})

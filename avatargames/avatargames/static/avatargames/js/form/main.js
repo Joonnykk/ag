@@ -204,6 +204,8 @@ export const orderFormSubmit = () => {
 		event.preventDefault();
 		event.stopPropagation();
 
+        const csrfInput = document.querySelector('input[name="csrfmiddlewaretoken"]')
+
 		let data = {
 			phone: phoneOrder.value,
 			email: emailOrder.value,
@@ -211,13 +213,18 @@ export const orderFormSubmit = () => {
 			type: "Заявка на франшизу",
 		};
 
-		fetch("/mailer.php", { method: "POST", body: JSON.stringify(data) })
+
+		fetch("/order_franchise/", {
+                method: "POST",
+                body: JSON.stringify(data),
+		        headers: { "X-CSRFToken": csrfInput.value }
+		    })
 			.then((response) => {
 				return response.json();
 			})
 			.then((data) => {
 				if (data.success) {
-					ym(92197085, "reachGoal", "fetchForm");
+//					ym(92197085, "reachGoal", "fetchForm");
 					orderForm.setAttribute("aria-hidden", "true");
 					nameOrderError.innerHTML = "no error";
 					nameOrderError.setAttribute("aria-hidden", "true");
