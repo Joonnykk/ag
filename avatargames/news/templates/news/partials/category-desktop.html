@@ -1,94 +1,22 @@
 <div class="hidden md:block mt-[30px] desktop-list-category">
-    <ul class="flex flex-wrap gap-x-[18px] gap-y-[10px] lg:gap-x-[10px]">
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
+    <nav class="flex flex-wrap gap-x-[18px] gap-y-[10px] lg:gap-x-[10px]">
+        <a
+                href="/news/"
+                class="{% if request.path == '/news/' %}active{% endif %} flex justify-center py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
+        >
                 Все категории
-            </button>
-        </li>
+        </a>
 
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
+        {% for category in categories %}
+            {% with "/news/"|add:category.slug|add:"/" as path %}
+            <a
+                href="/news/{{ category.slug }}/"
+                class="{% if request.path == path %}active{% endif %} text-base flex justify-center py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
             >
-                Открытие арены
-            </button>
-        </li>
+                {{ category.title }}
+            </a>
+            {% endwith %}
+        {% endfor %}
 
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Бизнес
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Оборудование
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Софт
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Конкурсы
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Полезные материалы
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Мероприятия
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Новые локации
-            </button>
-        </li>
-
-        <li>
-            <button
-                    type="button"
-                    class="py-2 px-3 rounded-[20px] bg-white font-open shadow-custom-shadow-categoryItem border border-[#EFEFF8] w-[232px] transition-all duration-300 xl:w-[225px]"
-            >
-                Всё о VR
-            </button>
-        </li>
-
-    </ul>
+    </nav>
 </div>

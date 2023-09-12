@@ -6,6 +6,8 @@ import "../css/footer.css";
 import "../css/form/form.css";
 import "../css/form/messages/style.css";
 import "../css/discount.css";
+import "../css/checkbox.css";
+
 
 import { preloader } from "./preloader.js";
 preloader();

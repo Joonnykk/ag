@@ -1,0 +1,3 @@
+input[type="checkbox"]:before {
+    background: url('/static/images/news/check.svg');
+}

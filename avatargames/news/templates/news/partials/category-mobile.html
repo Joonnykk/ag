@@ -30,50 +30,21 @@
             data-open="false"
             class="dropdown-list-category transition-all duration-300"
     >
-        <ul
+        <nav
                 class="mt-2 rounded-lg shadow-custom-shadow-menuList border border-[#C8BBFB] bg-white max-h-[320px] py-1 pl-1"
         >
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
+            <a href="/news/" class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
                 Все категории
-            </li>
+            </a>
 
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Открытие арены
-            </li>
 
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Бизнес
-            </li>
+            {% for category in categories %}
+                <a href="/news/{{ category.slug }}" class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
+                    {{ category.title }}
+                </a>
+            {% endfor %}
 
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Оборудование
-            </li>
-
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Софт
-            </li>
-
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Конкурсы
-            </li>
-
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Полезные материалы
-            </li>
-
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Мероприятия
-            </li>
-
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Новые локации
-            </li>
-
-            <li class="{=$class} py-[10px] px-[14px] rounded-[8px] select-none">
-                Всё о VR
-            </li>
-
-        </ul>
+        </nav>
     </div>
 
 </div>

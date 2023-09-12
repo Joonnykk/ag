@@ -33,12 +33,21 @@
 	box-shadow: 0px 0px 0px 4px #f0ebff, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
-.desktop-list-category button:active {
-	background: #ebe4ff;
-	color: #6a35ff;
+.desktop-list-category nav a {
+    font-size: 16px!important;
+	font-weight: 400!important;
 }
 
-.desktop-list-category button.active {
+
+.desktop-list-category a:active {
 	background: #ebe4ff;
 	color: #6a35ff;
+
+}
+
+.desktop-list-category a.active {
+	background: #ebe4ff;
+	color: #6a35ff;
+	font-size: 16px;
+	font-weight: 400;
 }

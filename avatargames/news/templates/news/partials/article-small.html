@@ -1,9 +1,11 @@
 {% load static %}
+
 <div class="md:w-[384px] xl:w-[453px]">
     <a href="#!" class="bg-[#F5F5F7]">
         <div class="h-auto w-full relative md:h-[216px] xl:h-[255px]">
+
             <img
-                    src="/assets/images/2-2a26a577.webp"
+                    src="{% get_static_prefix %}images/news/previews/{{ article }}"
                     alt="Подробная статья о WARSTATION"
                     class="h-full w-full object-cover"
             />
@@ -29,8 +31,7 @@
                 Подробная статья о WARSTATION
             </h3>
             <p class="mt-[10px] text-[#3A3A4A] leading-[150%] sm:order-4">
-                How do you create compelling presentations that wow your colleagues and impress your
-                managers?
+                {% lorem %}
             </p>
             <time
                     datetime="20-01-2022"

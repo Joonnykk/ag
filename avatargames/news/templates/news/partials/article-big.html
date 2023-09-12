@@ -1,0 +1,46 @@
+{% load static %}
+<div>
+    <a href="/articles/" class="bg-[#F5F5F7] lg:flex lg:gap-5 xl:block">
+        <div
+                class="h-auto w-full relative md:h-[552px] overflow-hidden lg:w-[794px] lg:h-[446px] lg:shrink-0 xl:w-full xl:h-[787px]"
+        >
+            <img
+                    src="{% static 'images/news/previews/1.jpg' %}"
+                    alt="Подробная статья о WARSTATION"
+                    class="h-full w-full object-cover"
+            />
+            <button
+                    type="button"
+                    class="w-12 h-12 absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 sm:w-14 sm:h-14 md:w-20 md:h-20 xl:w-40 xl:h-40"
+            >
+                <img src="{% static 'images/news/youtube.svg' %}" alt=""/>
+            </button>
+        </div>
+        <div
+                class="mt-5 flex flex-col sm:flex-row sm:flex-wrap sm:items-center lg:self-start lg:mt-0 xl:mt-5"
+        >
+            <button
+                    class="inline-block px-4 py-1 rounded-2xl border border-[#C8CBE7] shrink-0 grow-0 bg-white text-sm text-[#9499C3] w-max sm:order-1"
+            >
+                Открытие арены
+            </button>
+            <h3
+                    class="mt-[10px] w-full text-[#101828] text-2xl font-semibold font-cnext sm:order-3 sm:text-[32px] sm:mt-[14px] lg:leading-[140%] xl:mt-5 xl:text-[56px] xl:leading-[120%]"
+            >
+                Подробная статья о WARSTATION
+            </h3>
+            <p
+                    class="mt-[10px] w-full text-[#3A3A4A] leading-[150%] sm:order-4 xl:mt-5"
+            >
+                How do you create compelling presentations that wow your colleagues and impress your
+                managers?
+            </p>
+            <time
+                    datetime="20-01-2022"
+                    class="mt-[10px] text-[#9499C3] text-sm leading-[150%] sm:order-2 sm:self-center sm:mt-0 sm:ml-auto"
+            >20 Января 2022
+            </time
+            >
+        </div>
+    </a>
+</div>

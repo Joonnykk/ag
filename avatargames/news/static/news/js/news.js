@@ -7,4 +7,6 @@ import { categoryDesktop } from "./category-desktop.js";
 window.addEventListener("DOMContentLoaded", () => {
 	inputCategory();
 	categoryDesktop();
+
+	const types
 });
