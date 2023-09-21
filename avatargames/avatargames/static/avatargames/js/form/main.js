@@ -22,6 +22,8 @@ const successMessageClose = document.querySelector("#successMessage button");
 
 const phoneInputs = document.querySelectorAll('input[type="tel"]');
 
+const csrfInput = document.querySelector('input[name="csrfmiddlewaretoken"]')
+
 let activeMask = "+7 (999) 999-99-99";
 
 export const phoneInputsInit = () => {
@@ -176,26 +178,48 @@ export const orderFormValidate = () => {
 	phoneOrder.addEventListener("blur", (event) => {
 		const value = event.target.value;
 
-		if (value === "") {
-			isValid.phone = false;
-			phoneOrderError.innerHTML = "Поле обязательно к заполнению!";
-			phoneOrderError.setAttribute("aria-hidden", "false");
-		} else if (/\_/gm.test(value)) {
-			isValid.phone = false;
-			phoneOrderError.innerHTML = "Не коректный номер телефона!";
-			phoneOrderError.setAttribute("aria-hidden", "false");
-		} else {
-			isValid.phone = true;
-			phoneOrderError.innerHTML = "no error";
-			phoneOrderError.setAttribute("aria-hidden", "true");
+		let data = {
+			phone: phoneOrder.value,
+			email: emailOrder.value,
+			name: nameOrder.value,
+			type: "Заявка на франшизу",
 		}
 
-		if (isValidForm(isValid.name, isValid.phone)) {
-			ym(92197085, "reachGoal", "fillForm");
-			submitOrder.disabled = false;
-		} else {
-			submitOrder.disabled = true;
-		}
+		fetch("/validate_order_form/", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: { "X-CSRFToken": csrfInput.value }
+		    })
+				.then((response) => {
+					return response.json();
+				})
+				.then((data) => {
+					console.log(data)
+				})
+				.catch(() => {
+					console.error();
+				});
+
+//		if (value === "") {
+//			isValid.phone = false;
+//			phoneOrderError.innerHTML = "Поле обязательно к заполнению!";
+//			phoneOrderError.setAttribute("aria-hidden", "false");
+//		} else if (/\_/gm.test(value)) {
+//			isValid.phone = false;
+//			phoneOrderError.innerHTML = "Не коректный номер телефона!";
+//			phoneOrderError.setAttribute("aria-hidden", "false");
+//		} else {
+//			isValid.phone = true;
+//			phoneOrderError.innerHTML = "no error";
+//			phoneOrderError.setAttribute("aria-hidden", "true");
+//		}
+//
+//		if (isValidForm(isValid.name, isValid.phone)) {
+//			ym(92197085, "reachGoal", "fillForm");
+//			submitOrder.disabled = false;
+//		} else {
+//			submitOrder.disabled = true;
+//		}
 	});
 };
 
@@ -203,8 +227,6 @@ export const orderFormSubmit = () => {
 	submitOrder.addEventListener("click", (event) => {
 		event.preventDefault();
 		event.stopPropagation();
-
-        const csrfInput = document.querySelector('input[name="csrfmiddlewaretoken"]')
 
 		let data = {
 			phone: phoneOrder.value,

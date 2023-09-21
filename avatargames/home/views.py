@@ -4,6 +4,8 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.http import require_POST
 
+from .forms import OrderForm
+
 
 # Create your views here.
 def home(request):
@@ -23,3 +25,13 @@ def order_franchise(request):
     print(form["phone"])
 
     return JsonResponse({"Success": 'Check your email.'})
+
+
+@require_POST
+def validate_order_form(request):
+    form = OrderForm(request.POST)
+    if form.is_valid():
+        print(form.cleaned_data)
+    else:
+        print(form)
+    return JsonResponse({"success": 'true'})
