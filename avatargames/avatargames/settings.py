@@ -38,14 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_vite_plugin',
+    'rest_framework',
     'avatargames',
     'home',
     'franchise',
     'questions',
     'policy',
     'about',
-    'news',
-    'comming_soon'
+    # 'news',
+    'comming_soon',
+    'news.apps.NewsConfig'
 ]
 
 MIDDLEWARE = [
@@ -116,9 +118,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
