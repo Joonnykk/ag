@@ -22,6 +22,8 @@
     "gsap": "^3.12.1",
     "inputmask": "^5.0.8",
     "number-flip": "^1.1.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "swiper": "^9.4.1",
     "vite-plugin-html-inject": "^1.0.1"
   }

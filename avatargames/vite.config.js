@@ -23,6 +23,8 @@ export default defineConfig({
                 './news/css/news.css',
                 './comming_soon/js/comming_soon.js',
                 './comming_soon/css/comming_soon.css',
+
+                './agadmin/js/index.js',
                 ...glob.sync('static/**/*.{js,css}'),
             ]
         })

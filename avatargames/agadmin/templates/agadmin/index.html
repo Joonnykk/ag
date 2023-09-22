@@ -1,0 +1,15 @@
+{% load vite %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% include 'favicon/favicon.html' %}
+    <title>Avatar games | Администрация</title>
+
+    {% vite %}
+    {% vite 'admin/js/index.js' %}
+</head>
+<body>
+    <div id="ag-admin"></div>
+</body>
+</html>
