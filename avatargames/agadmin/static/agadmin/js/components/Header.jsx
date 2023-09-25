@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 export default function Header({ toggleDrawer }) {
     return (
         <AppBar
-            position="static"
+            position="fixed"
             color="primary"
         >
             <Toolbar>

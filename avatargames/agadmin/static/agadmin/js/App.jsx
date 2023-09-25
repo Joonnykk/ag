@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Box from '@mui/material/Box';
 import {Drawer} from "@mui/material";
 import Grid from '@mui/material/Unstable_Grid2';
+import Navigation from "./components/Navigation";
 
 
 const root = createRoot(document.getElementById('ag-admin'))
@@ -23,21 +24,17 @@ export default function App({ children }) {
     return (
         <>
             <Header toggleDrawer={toggleDrawer} />
+            <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
 
-            {/*<Drawer*/}
-            {/*  anchor={'left'}*/}
-            {/*  open={showDrawer}*/}
-            {/*  onClose={() => setShowDrawer(false)}*/}
-            {/*>*/}
-            {/*  <h1>Drawer</h1>*/}
-            {/*</Drawer>*/}
+                <Box sx={{ mt: 8, display: 'flex', flexGrow: 1}}>
+                    <Box sx={{width: 250, boxShadow: 3 }}>
+                        <Navigation />
+                    </Box>
 
-            <Box>
-                <Grid container>
-                    <Grid px={}>
-
-                    </Grid>
-                </Grid>
+                    <Box sx={{ flexGrow: 1, p: 4 }}>
+                         content
+                    </Box>
+                </Box>
 
             </Box>
         </>
