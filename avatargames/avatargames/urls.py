@@ -23,15 +23,16 @@ from django.conf import settings
 urlpatterns = [
     path('djadmin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('agadmin/', include('agadmin.urls')),
+
     path("", include("home.urls")),
+    path('agadmin/', include('agadmin.urls')),
     path("franchise/", include("franchise.urls")),
     path("questions/", include("questions.urls")),
     path("policy/", include("policy.urls")),
     path("about/", include("about.urls")),
     path("news/", include("news.urls")),
     path("comming_soon/", include("comming_soon.urls")),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+    # path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 if settings.DEBUG:

@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_vite_plugin',
     'rest_framework',
-    'ckeditor',
-    'ckeditor_uploader',
+    # 'ckeditor',
+    # 'ckeditor_uploader',
     'avatargames',
     'home',
     'franchise',
@@ -135,16 +135,33 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+# DJANGO_VITE_PLUGIN = {
+#     'WS_CLIENT': '@vite/client',
+#     'DEV_MODE': DEBUG,
+#     'BUILD_DIR': STATIC_ROOT or 'static',
+#     #'BUILD_URL_PREFIX': getattr(settings, 'STATIC_URL'),
+#     'SERVER': {
+#         'HTTPS': False,
+#         'HOST': '127.0.0.1',
+#         'PORT': 5173
+#     },
+#     'JS_ATTRS': {
+#         'type': 'module'
+#     },
+#     # 'JS_ATTRS_BUILD': Not present,
+#     'CSS_ATTRS': {
+#         'rel': 'stylesheet',
+#         'type': 'text/css'
+#     },
+#     'STATIC_LOOKUP': True
+# }
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
