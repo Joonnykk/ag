@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_vite_plugin',
     'rest_framework',
+    'ckeditor',
+    'ckeditor_uploader',
     'avatargames',
     'home',
     'franchise',
@@ -133,18 +135,16 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Where ViteJS assets are built.
-#DJANGO_VITE_ASSETS_PATH = BASE_DIR / "static" / "dist"
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+# ]
 
-# If use HMR or not.
-DJANGO_VITE_DEV_MODE = DEBUG
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Name of static files folder (after called python manage.py collectstatic)
-#STATIC_ROOT = BASE_DIR / "collectedstatic"
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# Include DJANGO_VITE_ASSETS_PATH into STATICFILES_DIRS to be copied inside
-# when run command python manage.py collectstatic
-#STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

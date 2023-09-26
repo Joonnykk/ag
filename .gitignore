@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 /avatargames/node_modules
+/avatargames/static
 dist
 dist-ssr
 *.local

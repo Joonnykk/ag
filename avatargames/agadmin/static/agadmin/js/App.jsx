@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import {Drawer} from "@mui/material";
 import Grid from '@mui/material/Unstable_Grid2';
 import Navigation from "./components/Navigation";
+import Editor from "./components/Editor";
 
 
 const root = createRoot(document.getElementById('ag-admin'))
@@ -32,7 +33,7 @@ export default function App({ children }) {
                     </Box>
 
                     <Box sx={{ flexGrow: 1, p: 4 }}>
-                         content
+                         <Editor />
                     </Box>
                 </Box>
 

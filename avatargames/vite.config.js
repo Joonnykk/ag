@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
-import djangoVite from 'django-vite-plugin'
+import djangoVitePlugin from 'django-vite-plugin'
 import glob from 'glob'
 
 export default defineConfig({
     base: '/static/',
     plugins: [
-        djangoVite({
+        djangoVitePlugin({
             input:[
                 './avatargames/js/common.js',
                 './avatargames/css/common.css',
@@ -15,8 +15,8 @@ export default defineConfig({
                 './franchise/css/franchise.css',
                 './questions/js/questions.js',
                 './questions/css/questions.css',
-                './about/js/policy.js',
-                './about/css/policy.css',
+                './about/js/about.js',
+                './about/css/about.css',
                 './policy/js/policy.js',
                 './policy/css/policy.css',
                 './news/js/news.js',
