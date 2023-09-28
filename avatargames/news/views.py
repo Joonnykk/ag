@@ -40,8 +40,3 @@ def index(request):
 def show(request, slug):
 
     return render(request, 'news/index.html')
-
-
-class NewApiView(generics.ListAPIView):
-    queryset = New.objects.all()
-    serializer_class = NewSerializer

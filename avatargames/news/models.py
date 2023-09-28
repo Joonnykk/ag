@@ -1,7 +1,8 @@
 from django.db import models
 from django.urls import reverse
 from django.template.defaultfilters import slugify
-from ckeditor_uploader.fields import RichTextUploadingField
+from django_ckeditor_5.fields import CKEditor5Field
+
 
 # Create your models here.
 class Category(models.Model):
@@ -32,7 +33,7 @@ class New(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
     description = models.TextField(blank=False)
-    content = RichTextUploadingField()
+    content = CKEditor5Field('Text', config_name='extends')
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
     is_published = models.BooleanField(default=False)
