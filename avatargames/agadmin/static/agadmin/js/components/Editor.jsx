@@ -8,13 +8,13 @@ function uploadAdapter(loader) {
       return new Promise(async (resolve, reject) => {
         try {
           const file = await loader.file;
-          const response = await fetch( `images/`, {
+          const response = await fetch( `/api/v1/uploads/`, {
             method: "POST",
             data: {
               files: file
             },
             headers: {
-              "Content-Type": "multipart/form-data"
+              // "Content-Type": "multipart/form-data"
             }
           });
           resolve({
@@ -37,9 +37,9 @@ function uploadPlugin(editor) {
 export default function Editor() {
     return (
         <CKEditor
-            // config={{
-            //     extraPlugins: [uploadPlugin]
-            // }}
+            config={{
+                extraPlugins: [uploadPlugin]
+            }}
             editor={ ClassicEditor }
             data="<p>Hello from CKEditor&nbsp;5!</p>"
             onReady={ editor => {

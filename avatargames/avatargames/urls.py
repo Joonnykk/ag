@@ -21,6 +21,7 @@ from django.conf import settings
 
 
 urlpatterns = [
+    path('ckeditor5/', include('django_ckeditor_5.urls')),
     path('djadmin/', admin.site.urls),
 
     path("", include("home.urls")),
@@ -33,7 +34,8 @@ urlpatterns = [
     path("comming_soon/", include("comming_soon.urls")),
     path("ckeditor5/", include('django_ckeditor_5.urls'), name="ck_editor_5_upload_file"),
     # api
-    path('api/v1/news/', include("news.api"))
+    path('api/v1/news/', include("news.api")),
+    path("api/v1/uploads/", include("filestorage.urls")),
 ]
 
 if settings.DEBUG:

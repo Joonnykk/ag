@@ -32,8 +32,8 @@ class Type(models.Model):
 class New(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
-    description = models.TextField(blank=False)
-    content = CKEditor5Field('Text', config_name='extends')
+    description = CKEditor5Field(max_length=500, verbose_name='Краткое описание', config_name='extends')
+    content = CKEditor5Field('Полное описание', config_name='extends')
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
     is_published = models.BooleanField(default=False)
