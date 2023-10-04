@@ -17,9 +17,8 @@
     "vite-plugin-image-optimizer": "^1.1.6"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^39.0.2",
+    "@ckeditor/ckeditor5-build-classic": "^40.0.0",
     "@ckeditor/ckeditor5-react": "^6.1.0",
-    "@ckeditor/ckeditor5-upload": "^39.0.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.9",
@@ -30,8 +29,8 @@
     "inputmask": "^5.0.8",
     "number-flip": "^1.1.10",
     "react": "^18.2.0",
+    "react-cookie": "^6.1.1",
     "react-dom": "^18.2.0",
-    "swiper": "^9.4.1",
-    "vite-plugin-html-inject": "^1.0.1"
+    "swiper": "^9.4.1"
   }
 }

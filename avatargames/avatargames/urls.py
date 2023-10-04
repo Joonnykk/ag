@@ -19,7 +19,6 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-
 urlpatterns = [
     path('ckeditor5/', include('django_ckeditor_5.urls')),
     path('djadmin/', admin.site.urls),

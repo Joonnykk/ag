@@ -9,6 +9,7 @@ lerna-debug.log*
 
 /avatargames/node_modules
 /avatargames/static
+/avatargames/media
 dist
 dist-ssr
 *.local

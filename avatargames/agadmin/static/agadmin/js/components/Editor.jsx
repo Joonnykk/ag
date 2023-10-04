@@ -1,44 +1,36 @@
 import React from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { Cookies } from 'react-cookie'
+import MyCustomUploadAdapterPlugin from "../helpers/EditorUploader";
 
-function uploadAdapter(loader) {
-  return {
-    upload: () => {
-      return new Promise(async (resolve, reject) => {
-        try {
-          const file = await loader.file;
-          const response = await fetch( `/api/v1/uploads/`, {
-            method: "POST",
-            data: {
-              files: file
-            },
-            headers: {
-              // "Content-Type": "multipart/form-data"
-            }
-          });
-          resolve({
-            default: `/${response.data.filename}`
-          });
-        } catch (error) {
-          reject("Hello");
-        }
-      })
-    }
-  }
-}
+const cookie = new Cookies()
 
-function uploadPlugin(editor) {
-  editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {
-    return uploadAdapter(loader)
-  }
-}
+// const AppEditor = new Editor('div', {
+//     simpleUpload: {
+//          uploadUrl: '/api/v1/uploads/image/',
+//          withCredentials: true,
+//          headers: {
+//             'X-CSRF-TOKEN': cookie.get("csrftoken")
+//         }
+//     }
+// })
 
-export default function Editor() {
+console.log(ClassicEditor)
+
+export default function AppEditor() {
     return (
         <CKEditor
             config={{
-                extraPlugins: [uploadPlugin]
+                plugins: [MyCustomUploadAdapterPlugin],
+                removePlugins: [ 'CKBox' ]
+                // simpleUpload: {
+                //      uploadUrl: '/api/v1/uploads/image/',
+                //      withCredentials: true,
+                //      headers: {
+                //         'X-CSRF-TOKEN': cookie.get("csrftoken")
+                //     }
+                // }
             }}
             editor={ ClassicEditor }
             data="<p>Hello from CKEditor&nbsp;5!</p>"

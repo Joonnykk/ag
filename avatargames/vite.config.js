@@ -26,7 +26,8 @@ export default defineConfig({
 
                 './agadmin/js/index.js',
                 ...glob.sync('static/**/*.{js,css}'),
-            ]
+            ],
         })
     ],
+
 });
